@@ -1,0 +1,77 @@
+
+@media(max-width:800px){
+ .submit-v2-grid{grid-template-columns:1fr;gap:28px}
+ .submit-v2-body{grid-template-columns:1fr}
+ .submit-v2-left{border-right:0;border-bottom:1px solid var(--line,#333);padding-right:0}
+ .submit-v2-form{padding-left:0}
+ .submit-v2-fields{grid-template-columns:1fr}
+ .submit-v2-fields .full{grid-column:auto}
+ .submit-v2-upload{grid-template-columns:1fr}
+}
+
+/* Band page: align all member cards from the top */
+.section-grid{
+  align-items:start;
+}
+.member{
+  align-items:start !important;
+}
+.member > span{
+  align-self:start !important;
+  margin-top:0 !important;
+}
+.member > div{
+  align-self:start !important;
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+.member h2{
+  margin-top:0 !important;
+}
+.member .meta:first-of-type{
+  margin-top:0 !important;
+}
+.member p{
+  margin-top:16px;
+}
+
+/* Compact band-member cards: number directly above name */
+.member{
+  display:block !important;
+  min-height:0 !important;
+  height:auto !important;
+  padding-top:24px !important;
+  padding-bottom:30px !important;
+}
+.member > span{
+  display:block !important;
+  margin:0 0 24px 0 !important;
+}
+.member > div{
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.member h2{
+  margin:0 0 8px 0 !important;
+}
+
+/* Band grid: all four blocks use the same dimensions as card 01 */
+.section-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-auto-rows:1fr !important;
+  align-items:stretch !important;
+}
+.member{
+  box-sizing:border-box !important;
+  height:100% !important;
+  min-height:0 !important;
+}
+@media(max-width:800px){
+  .section-grid{
+    grid-template-columns:1fr !important;
+    grid-auto-rows:auto !important;
+  }
+  .member{height:auto !important;}
+}
