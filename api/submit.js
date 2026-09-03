@@ -5,6 +5,7 @@ const REFRESH_TOKEN=process.env.GOOGLE_DRIVE_REFRESH_TOKEN;
 
 function send(res,status,data){res.statusCode=status;res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store');res.end(JSON.stringify(data));}
 function clean(s,max=80){return String(s||'').replace(/[\\/:*?"<>|\x00-\x1f]/g,' ').replace(/\s+/g,' ').trim().slice(0,max)}
+function cleanMime(s){const v=String(s||'').trim().toLowerCase();return /^[a-z0-9!#$&^_.+-]+\/[a-z0-9!#$&^_.+-]+$/.test(v)?v:'application/octet-stream'}
 function isoDate(value){if(!value)return new Date().toISOString().slice(0,10);const d=new Date(value);return Number.isNaN(d.getTime())?new Date().toISOString().slice(0,10):d.toISOString().slice(0,10)}
 async function accessToken(){
   if(!CLIENT_ID||!CLIENT_SECRET||!REFRESH_TOKEN)throw new Error('Google Drive authorization is not complete in Vercel');
@@ -23,9 +24,10 @@ async function createJsonFile(token,folderId,name,data){
 }
 async function createUploadSession(token,folderId,file){
   const safeName=clean(file.name,160)||'upload.bin';
-  const r=await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable&fields=id,name,webViewLink',{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json; charset=UTF-8','X-Upload-Content-Type':file.type||'application/octet-stream','X-Upload-Content-Length':String(file.size||0)},body:JSON.stringify({name:safeName,parents:[folderId]})});
+  const mimeType=cleanMime(file.type);
+  const r=await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable&fields=id,name,webViewLink',{method:'POST',headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json; charset=UTF-8','X-Upload-Content-Type':mimeType,'X-Upload-Content-Length':String(file.size||0)},body:JSON.stringify({name:safeName,parents:[folderId]})});
   if(!r.ok){let j={};try{j=await r.json()}catch{}throw new Error(j.error?.message||`Could not prepare upload for ${safeName}`)}
-  const uploadUrl=r.headers.get('location');if(!uploadUrl)throw new Error(`Google did not return an upload URL for ${safeName}`);return {name:safeName,uploadUrl};
+  const uploadUrl=r.headers.get('location');if(!uploadUrl)throw new Error(`Google did not return an upload URL for ${safeName}`);return {name:safeName,mimeType,uploadUrl};
 }
 
 module.exports=async(req,res)=>{
@@ -34,7 +36,7 @@ module.exports=async(req,res)=>{
   try{
     let body=req.body;if(typeof body==='string')body=JSON.parse(body);if(!body||typeof body!=='object')return send(res,400,{error:'Invalid submission'});
     const submission={
-      type:clean(body.type,60),name:clean(body.name,120),email:clean(body.email,180),show:clean(body.show,180),eventDate:clean(body.eventDate,40),city:clean(body.city,100),link:clean(body.link,500),notes:String(body.notes||'').trim().slice(0,10000),submittedAt:new Date().toISOString(),source:'beast-band.vercel.app',originalFiles:Array.isArray(body.files)?body.files.map(f=>({name:clean(f.name,160),type:clean(f.type,120),size:Number(f.size)||0})).slice(0,25):[]
+      type:clean(body.type,60),name:clean(body.name,120),email:clean(body.email,180),show:clean(body.show,180),eventDate:clean(body.eventDate,40),city:clean(body.city,100),link:clean(body.link,500),notes:String(body.notes||'').trim().slice(0,10000),submittedAt:new Date().toISOString(),source:'beast-band.vercel.app',originalFiles:Array.isArray(body.files)?body.files.map(f=>({name:clean(f.name,160),type:cleanMime(f.type),size:Number(f.size)||0})).slice(0,25):[]
     };
     if(!submission.name||!submission.email)return send(res,400,{error:'Name and email are required'});
     const token=await accessToken();
