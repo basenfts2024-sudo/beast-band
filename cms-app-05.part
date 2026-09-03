@@ -1,0 +1,50 @@
+nn's performance. Source: https://lauramccullagh.com/blog/2015/02/beast-bardo-exclusive-acoustic-launch-at-the-cape-town-club/"],
+  ["29 Mar 2015","Live Review","BEAST at Park Acoustics, Pretoria","Running Wolf's Rant — Coverage of Park Acoustics in Pretoria praises BEAST's heavy twin-bass attack, Beckmann's piercing vocals and the drummer's performance, providing a useful record of the band's Gauteng live activity.","Coverage of Park Acoustics in Pretoria praises BEAST's heavy twin-bass attack, Beckmann's piercing vocals and the drummer's performance, providing a useful record of the band's Gauteng live activity. Source: https://rwrant.co.za/3rd-edition-of-park-acoustics-for-2015/"],
+  ["09 Apr 2015","Feature / Album Review","Could this be SA's finest live rock act?","Mail & Guardian — A major national feature examines the making of Bardo, BEAST's experimental origins and its formidable live reputation. It explains how Zietsman and Nel began the project in a shared-house basement and discusses Zietsman's role mixing the second album.","A major national feature examines the making of Bardo, BEAST's experimental origins and its formidable live reputation. It explains how Zietsman and Nel began the project in a shared-house basement and discusses Zietsman's role mixing the second album. Source: https://mg.co.za/friday/2015-04-09-could-this-be-sa-s-finest-live-rock-act/"]
+]
+let albumsData={
+ smoke:{title:'Smoke Swig Swear',year:'2013',total:'32:37',tracks:[
+  ['Fill the Hole','4:31'],['Airport Deport Abort','3:28'],['Walls','3:51'],['The Grape','4:09'],['Man in Between','4:43'],['Smoke Swig Swear','4:13'],['Cat Lady','3:04'],['Hand of God','4:38']
+ ]},
+ bardo:{title:'Bardo',year:'2015',total:'30:53',tracks:[
+  ['Healer','3:55'],['Alliance','3:07'],['Out Here','3:29'],['Vesica Piscis','4:33'],['Are We Alive?','2:52'],['Wrong Side','2:48'],['Black Hole','3:48'],['Chant','2:25'],['Down','3:56']
+ ]}
+};
+const lyricNotes={
+ 'Walls':{excerpt:'Walls in my head vibrate when I drill holes',source:'Kurt Writes Things',url:'https://www.kurtwritesthings.com/things/2013/08/the-beast-with-two-bassists-smoke-swig-swear-album-review'},
+ 'Healer':{excerpt:'Are you witch, or are you a healer?',source:'Mail & Guardian',url:'https://mg.co.za/friday/2015-04-09-could-this-be-sa-s-finest-live-rock-act/'},
+ 'Vesica Piscis':{excerpt:'the sum of two parts',source:'Mail & Guardian',url:'https://mg.co.za/friday/2015-04-09-could-this-be-sa-s-finest-live-rock-act/'},
+ 'Wrong Side':{excerpt:"I'm on the wrong side of the road",source:'The Fuss',url:'https://thefuss.co.za/beast-bardo/'}
+};
+let videography=[
+ ['01','Fill The Hole','Vimeo · 2012','https://vimeo.com'],
+ ['02','BEAST Documentary','Vimeo · 2013','https://vimeo.com'],
+ ['03','Smoke Swig Swear','Vimeo · 2013','https://vimeo.com'],
+ ['04','Wrong Side','YouTube · 2014','https://www.youtube.com']
+];
+let CMS={};
+const htmlLines=s=>String(s||'').replace(/\n/g,'<br>');
+async function loadCMS(){
+ try{
+   const r=await fetch('/api/content?ts='+Date.now(),{cache:'no-store'});
+   if(!r.ok)return;
+   const c=await r.json();
+   CMS=c||{};
+   if(c.site){ASSETS.hero=c.site.heroImage||ASSETS.hero;ASSETS.shows=c.site.showsImage||ASSETS.shows;document.title=c.site.title||'BEAST'}
+   if(Array.isArray(c.gallery))ASSETS.gallery=c.gallery.slice();
+   if(Array.isArray(c.socials))socials=c.socials.map(x=>[x.name||'',x.handle||'',x.url||'']);
+   if(Array.isArray(c.members))members=c.members.map(x=>[x.name||'',x.role||'',x.other||'',x.bio||'']);
+   if(Array.isArray(c.timeline))timeline=c.timeline.map(x=>[x.year||'',x.title||'',x.copy||'',x.source||'']);
+   if(Array.isArray(c.shows))shows=c.shows.map(x=>[x.year||'',x.date||'',x.venue||'',x.title||'',x.copy||'',x.source||'']);
+   if(c.news&&Array.isArray(c.news.articles))news=c.news.articles.map(x=>[x.date||'',x.category||'',x.title||'',x.summary||'',x.body||'']);
+   if(Array.isArray(c.albums)){
+     c.albums.forEach(a=>{if(a.key){albumsData[a.key]={title:a.title||'',year:a.year||'',total:a.total||'',tracks:(a.tracks||[]).map(t=>[t.title||'',t.time||''])};if(a.key==='smoke')ASSETS.smoke=a.image||ASSETS.smoke;if(a.key==='bardo')ASSETS.bardo=a.image||ASSETS.bardo;}})
+   }
+   if(c.interviews&&typeof c.interviews==='object')interviewQuestions=JSON.parse(JSON.stringify(c.interviews));
+   if(Array.isArray(c.videography))videography=c.videography.map((v,i)=>[v.number||String(i+1).padStart(2,'0'),v.title||'',v.meta||'',v.url||'']);
+ }catch(e){console.warn('CMS fallback',e)}
+}
+function header(){const st=CMS.site||{};return `<header class="header"><div class="wrap header-in"><a class="logo" href="#/">${st.logo||'Beast'}</a><button class="menu">Menu</button><nav class="nav">${['Band','Timeline','Albums','Lyrics','Shows','News','Gallery','Submit','Contact'].map(x=>`<a href="#/${x.toLowerCase()}">${x}</a>`).join('')}</nav></div></header>`}
+function footer(){const st=CMS.site||{};return `<footer class="footer"><div class="wrap footer-in"><div class="foot-brand"><strong>${st.logo||'Beast'}</strong><span>${st.location||'Cape Town, South Africa'}</span><span>${st.footerLine||'Est. 2012 — Psychological rock and roll'}</span><a href="/admin.html">Band login</a></div><div class="foot-links">${socials.map(s=>`<a target="_blank" rel="noreferrer" href="${s[2]}">${s[0]}</a>`).join('')}</div></div></footer>`}
+function shell(eyebrow,title,html){return `<main class="main"><section class="page"><div class="wrap"><div class="eyebrow">${eyebrow}</div><h1 class="title">${title}</h1>${html}</div></section></main>`}
+function home(){const h=CMS.home||{};return `<main class="main home-main"><section class="home-hero"><img src="${ASSETS.hero}" alt="BEAST band"><div class="home-hero-shade"></div><div class="home-hero-content wrap"><div class="eyebrow home-hero-kicker">${h.heroKicker||'Cape Town · South Africa · Est. 2012'}</div><h1 class="home-title hero-title">${h.heroTitle||'Beast'}</h1><div class="home-hero-foot"><p>${h.heroText||'Psychological rock and roll built on two ba

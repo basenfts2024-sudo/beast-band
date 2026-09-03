@@ -1,0 +1,36 @@
+const app=document.querySelector('#app');
+let content=null,original=null,current='general',dirty=false,key=sessionStorage.getItem('beast_admin_key')||'';
+const clone=x=>JSON.parse(JSON.stringify(x));
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const sections=[['general','General'],['home','Home'],['band','Band'],['albums','Albums'],['shows','Shows'],['news','News'],['interviews','Band Interviews'],['gallery','Gallery'],['video','Videography'],['timeline','Timeline'],['submit','Submit'],['contact','Contact'],['socials','Social Links']];
+const pathGet=(o,path)=>path.split('.').reduce((a,k)=>a?.[k],o);
+const pathSet=(o,path,val)=>{const p=path.split('.');let a=o;while(p.length>1){const k=p.shift();a[k]??={};a=a[k]}a[p[0]]=val;markDirty()};
+function markDirty(){dirty=true;document.querySelector('#save-status')?.replaceChildren(document.createTextNode('Unsaved changes'));document.querySelector('#dirty')?.classList.remove('hidden')}
+function input(path,label,type='text',full=false){const v=pathGet(content,path)??'';return `<div class="field ${full?'full':''}"><label>${esc(label)}</label>${type==='textarea'?`<textarea data-path="${path}">${esc(v)}</textarea>`:`<input data-path="${path}" value="${esc(v)}" ${type==='url'?'inputmode="url"':''}>`}</div>`}
+function bindFields(root=document){root.querySelectorAll('[data-path]').forEach(el=>el.oninput=()=>pathSet(content,el.dataset.path,el.value))}
+function block(title,body,i,kind){return `<article class="block"><div class="block-head"><strong>${esc(title)}</strong><div class="row-actions"><button class="mini" data-move="up" data-kind="${kind}" data-i="${i}">↑</button><button class="mini" data-move="down" data-kind="${kind}" data-i="${i}">↓</button><button class="mini" data-remove="${kind}" data-i="${i}">Remove</button></div></div><div class="block-body">${body}</div></article>`}
+function listEditor(kind,arr,fields,newItem,titleFn=x=>x.title||x.name||'Item'){
+ return arr.map((item,i)=>block(`${String(i+1).padStart(2,'0')} — ${titleFn(item)}`,`<div class="fields">${fields.map(f=>{const [k,l,t='text',full=false]=f,v=item[k]??'';return `<div class="field ${full?'full':''}"><label>${l}</label>${t==='textarea'?`<textarea data-list="${kind}" data-i="${i}" data-k="${k}">${esc(v)}</textarea>`:`<input data-list="${kind}" data-i="${i}" data-k="${k}" value="${esc(v)}">`}</div>`}).join('')}</div>`,i,kind)).join('')+`<button class="repeater-add" data-add="${kind}">+ Add ${kind.replace(/s$/,'')}</button>`;
+}
+const listMap={
+ members:()=>content.members,
+ shows:()=>content.shows,
+ articles:()=>content.news.articles,
+ latest:()=>content.news.latestUpdates,
+ timeline:()=>content.timeline,
+ video:()=>content.videography,
+ socials:()=>content.socials,
+ albums:()=>content.albums,
+ steps:()=>content.submit.steps
+};
+const newMap={members:{name:'New member',role:'',other:'',bio:''},shows:{year:'',date:'',venue:'',title:'New show',copy:'',source:''},articles:{date:'',category:'News',title:'New article',summary:'',body:''},latest:{date:'',category:'Update',title:'New update',summary:'',body:''},timeline:{year:'',title:'New timeline entry',copy:'',source:''},video:{number:'',title:'New video',meta:'',url:''},socials:{name:'New link',handle:'',url:''},steps:{title:'New step',copy:''}};
+function bindLists(){
+ document.querySelectorAll('[data-list]').forEach(el=>el.oninput=()=>{listMap[el.dataset.list]()[+el.dataset.i][el.dataset.k]=el.value;markDirty()});
+ document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{const k=b.dataset.add;listMap[k]().push(clone(newMap[k]));markDirty();renderSection()});
+ document.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{listMap[b.dataset.remove]().splice(+b.dataset.i,1);markDirty();renderSection()});
+ document.querySelectorAll('[data-move]').forEach(b=>b.onclick=()=>{const a=listMap[b.dataset.kind](),i=+b.dataset.i,j=b.dataset.move==='up'?i-1:i+1;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];markDirty();renderSection()});
+}
+function head(title,copy){return `<div class="section-head"><div><div class="eyebrow">BEAST Content</div><h2>${title}</h2></div><p>${copy}</p></div>`}
+function renderGeneral(){return head('General','The overall identity and global artwork used across the site.')+`<div class="fields">${input('site.title','Browser title')}${input('site.logo','Logo text')}${input('site.location','Location')}${input('site.established','Established')}${input('site.tagline','Tagline')}${input('site.footerLine','Footer line', 'text',true)}${input('site.heroImage','Landing hero image URL','url',true)}${input('site.showsImage','Shows hero image URL','url',true)}</div><p class="help">Paste Filebase/IPFS URLs directly. The public site keeps the image at its original proportions unless that section intentionally crops it.</p>`}
+function renderHome(){return head('Home','Edit the landing page without touching its layout.')+`<div class="fields">${input('home.heroKicker','Hero kicker')}${input('home.heroTitle','Hero title')}${input('home.heroText','Hero copy','textarea',true)}${input('home.heroCtaLabel','Hero button label')}${input('home.heroCtaRoute','Hero button link')}${input('home.introEyebrow','Intro eyebrow')}${input('home.introTitle','Intro headline','textarea')}${input('home.introText','Intro copy','textarea',true)}${input('home.introLinkLabel','Intro link label')}${input('home.introLinkRoute','Intro link route')}${input('home.latestEyebrow','Latest update label')}${input('home.latestLinkLabel','Latest link label')}${input('home.followEyebrow','Follow label')}${input('home.followTitle','Follow headline')}</div>`}
+function renderBand(){const b=content.band;return head('Band','Member blocks stay identical in size; edit names and copy here.')+listEditor('members',content.members,[['name','Name'],['role','Role'],['other','Other band / note'],['bio','Biography','textarea',true]],{name:'New member',role:'',other:'',bio:''},x=>x.name)+`<div class="block"><d

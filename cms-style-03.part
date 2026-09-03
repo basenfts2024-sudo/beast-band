@@ -1,0 +1,78 @@
+olute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.05) 34%,rgba(0,0,0,.68) 100%)}
+.home-hero-content{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;padding-top:44px;padding-bottom:32px}
+.home-hero-kicker{color:rgba(255,255,255,.78);margin-bottom:auto}
+.hero-title{font-size:clamp(110px,20vw,310px);line-height:.62;margin:0 0 34px;color:#fff;text-shadow:0 1px 20px rgba(0,0,0,.18)}
+.home-hero-foot{border-top:1px solid rgba(255,255,255,.75);padding-top:16px;display:grid;grid-template-columns:minmax(0,650px) auto;gap:30px;align-items:end}
+.home-hero-foot p{font-size:clamp(18px,1.7vw,28px);line-height:1.14;margin:0;max-width:650px}
+.hero-cta{font-size:11px;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:4px;justify-self:end}
+.home-after{padding:72px 0 110px}
+.home-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;border-top:1px solid;padding-top:22px}
+.home-section-title{font-size:clamp(52px,7vw,106px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase;margin:0}
+.home-lede{font-size:clamp(18px,1.8vw,27px);line-height:1.22;margin:0 0 32px;max-width:720px}
+.home-lineup{margin-top:76px}
+.home-tiles{margin-top:76px}
+.lyrics-head{display:grid;grid-template-columns:minmax(140px,220px) 1fr;gap:28px;align-items:start;margin-bottom:38px}
+.lyrics-head img{width:100%;height:auto;display:block}
+.lyric-track{align-items:start}
+.lyric-excerpt{font-family:Georgia,'Times New Roman',serif;font-size:clamp(20px,2.2vw,34px);line-height:1.15;margin:22px 0 12px;max-width:760px}
+.lyric-source{margin-bottom:6px}
+.lyric-pending{margin-top:18px;color:var(--muted)}
+@media(max-width:950px){.home-hero{height:76vh;min-height:560px}.home-intro{grid-template-columns:1fr}.home-hero-foot{grid-template-columns:1fr}.hero-cta{justify-self:start}.hero-title{font-size:25vw}.home-after{padding-top:50px}}
+@media(max-width:620px){.home-hero{height:72vh;min-height:520px}.home-hero-content{padding-bottom:22px}.hero-title{font-size:27vw;margin-bottom:26px}.home-hero-foot p{font-size:18px}.home-after{padding:38px 0 80px}.home-lineup,.home-tiles{margin-top:48px}.lyrics-head{grid-template-columns:1fr}.lyrics-head img{max-width:240px}.lyric-excerpt{font-size:23px}}
+
+.archive-source{margin-top:8px}
+.track-summary{padding:13px 0 0;text-align:left}
+.album-links{display:flex;gap:16px;flex-wrap:wrap;padding:13px 0 2px;border-top:1px solid}
+.album-links a{font-size:10px;text-transform:uppercase;letter-spacing:.13em;border-bottom:1px solid;padding-bottom:3px}
+.album-links a:hover{opacity:.55}
+.video-row{grid-template-columns:80px 1fr;justify-items:start}
+.video-title{display:flex;align-items:baseline;justify-content:flex-start;gap:12px;text-align:left}
+.video-title .meta{text-align:left}
+.lyrics-simple{border-top:1px solid}
+.lyric-name{display:grid;grid-template-columns:58px 1fr;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid}
+.lyric-name strong{font-size:24px;letter-spacing:-.025em}
+@media(max-width:620px){.video-row{grid-template-columns:42px 1fr}.video-title{gap:8px;flex-wrap:wrap}.video-title .meta{display:inline}.lyric-name{grid-template-columns:38px 1fr}.lyric-name strong{font-size:20px}}
+
+.interview-members{grid-column:1/-1;display:grid;gap:42px}
+.interview-member{border-top:1px solid var(--line,#333);padding-top:24px}
+.interview-member h2{font-size:clamp(32px,5vw,64px);margin:8px 0 24px}
+.interview-member ol{margin:0;padding-left:28px;display:grid;gap:14px;max-width:900px}
+.interview-member li{padding-left:8px;line-height:1.45;font-size:18px}
+
+/* Band interviews */
+.band-interviews{grid-column:1/-1;width:100%}
+.interview-intro{display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;column-gap:48px;align-items:end;padding:12px 0 48px;border-bottom:1px solid var(--line,#333)}
+.interview-intro .eyebrow{grid-column:1/-1;margin-bottom:24px}
+.interview-intro h2{font-size:clamp(44px,7vw,92px);line-height:.9;letter-spacing:-.055em;margin:0}
+.interview-intro p{font-size:18px;line-height:1.5;max-width:520px;margin:0 0 5px}
+.interview-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-left:1px solid var(--line,#333)}
+.interview-card{border-right:1px solid var(--line,#333);border-bottom:1px solid var(--line,#333);padding:30px}
+.interview-card-head{display:flex;gap:20px;align-items:flex-start;margin-bottom:30px}
+.interview-number{font-size:13px;opacity:.55;padding-top:8px}
+.interview-card h3{font-size:clamp(30px,4vw,52px);letter-spacing:-.04em;line-height:1;margin:6px 0 0}
+.question-list{border-top:1px solid var(--line,#333)}
+.question-row{display:grid;grid-template-columns:34px 1fr;gap:12px;border-bottom:1px solid var(--line,#333);padding:14px 0}
+.question-row:last-child{border-bottom:0}
+.question-row>span{font-size:11px;opacity:.5;padding-top:4px}
+.question-row p{font-size:15px;line-height:1.4;margin:0}
+@media(max-width:800px){
+ .interview-intro{grid-template-columns:1fr;gap:24px}
+ .interview-card-grid{grid-template-columns:1fr}
+ .interview-card{padding:24px 18px}
+}
+
+/* Gallery: keep the first row aligned to one top edge */
+.gallery{align-items:start}
+.gallery figure{vertical-align:top}
+.gallery figure:nth-child(-n+3){margin-top:0!important;align-self:start!important}
+.gallery figure:nth-child(-n+3) img{vertical-align:top}
+
+/* Submit archive redesign */
+.submit-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;padding:12px 0 48px}
+.submit-big{font-size:clamp(58px,9vw,126px);font-weight:800;letter-spacing:-.07em;line-height:.78;text-transform:uppercase}
+.submit-copy{max-width:520px;padding-bottom:4px}
+.submit-copy p{font-size:19px;line-height:1.45;margin:0 0 16px}
+.submit-rule{border-top:1px solid var(--line,#333)}
+.submit-layout{display:grid;grid-template-columns:minmax(230px,.65fr) 1.35fr;gap:0;border-left:1px solid var(--line,#333)}
+.submit-sidebar{padding:34px 34px 40px 0;border-right:1px solid var(--line,#333)}
+.submit-type-list{margin-top:25px;bord

@@ -1,0 +1,130 @@
+er-top:1px solid var(--line,#333)}
+.submit-type-list>div{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line,#333)}
+.submit-type-list span{font-size:11px;opacity:.5;padding-top:3px}
+.submit-type-list strong{font-size:16px}
+.submit-note{font-size:13px;line-height:1.5;opacity:.65;margin:28px 0 0;max-width:280px}
+.submit-form-new{padding:34px 0 50px 42px}
+.submit-form-head{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:34px}
+.submit-kind{padding-bottom:28px;border-bottom:1px solid var(--line,#333);margin-bottom:28px}
+.submit-fields{gap:24px 20px}
+.submit-form-new input,.submit-form-new textarea{border-radius:0;background:transparent;border:0;border-bottom:1px solid var(--line,#333);padding-left:0;padding-right:0}
+.submit-form-new textarea{min-height:130px;border:1px solid var(--line,#333);padding:15px;margin-top:8px}
+.submit-file{border:1px dashed var(--line,#555);padding:20px!important;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}
+.submit-file label{grid-column:1/-1}
+.submit-file input{border:0;padding:6px 0}
+.submit-btn-wide{width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 20px;font-size:14px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:800px){
+ .submit-intro{grid-template-columns:1fr;gap:30px}
+ .submit-big{font-size:clamp(52px,17vw,88px)}
+ .submit-layout{grid-template-columns:1fr;border-left:0}
+ .submit-sidebar{padding:28px 0;border-right:0;border-bottom:1px solid var(--line,#333)}
+ .submit-form-new{padding:32px 0}
+ .submit-form-head{align-items:flex-start;flex-direction:column}
+ .submit-file{grid-template-columns:1fr}
+}
+
+/* Submit redesign v2 */
+.submit-v2-hero{padding:10px 0 46px;border-bottom:1px solid var(--line,#333)}
+.submit-v2-kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.6;margin-bottom:32px}
+.submit-v2-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:end}
+.submit-v2-grid h2{font-size:clamp(64px,10vw,140px);line-height:.78;letter-spacing:-.07em;text-transform:uppercase;margin:0}
+.submit-v2-copy{max-width:480px;padding-bottom:4px}
+.submit-v2-copy p{font-size:18px;line-height:1.5;margin:0 0 14px}
+.submit-v2-body{display:grid;grid-template-columns:.8fr 1.2fr;border-bottom:1px solid var(--line,#333)}
+.submit-v2-left{border-right:1px solid var(--line,#333);padding:34px 34px 46px 0}
+.submit-step{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line,#333)}
+.submit-step:last-of-type{border-bottom:1px solid var(--line,#333)}
+.submit-step>span{font-size:11px;opacity:.5;padding-top:4px}
+.submit-step strong{font-size:17px;display:block;margin-bottom:4px}
+.submit-step p{margin:0;font-size:13px;line-height:1.45;opacity:.65}
+.submit-credit{margin-top:32px;max-width:280px}
+.submit-credit p{font-size:14px;line-height:1.5;opacity:.7}
+.submit-v2-form{padding:34px 0 48px 42px}
+.submit-v2-formtop{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding-bottom:28px;border-bottom:1px solid var(--line,#333);margin-bottom:30px}
+.submit-v2-types{margin-top:14px}
+.submit-v2-mark{font-size:38px;line-height:1;letter-spacing:-.05em;opacity:.18;font-weight:700}
+.submit-v2-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px}
+.submit-v2-fields .full{grid-column:1/-1}
+.submit-v2-form input,.submit-v2-form textarea{background:transparent;border:0;border-bottom:1px solid var(--line,#333);border-radius:0;padding-left:0;padding-right:0}
+.submit-v2-form textarea{min-height:140px;border:1px solid var(--line,#333);padding:14px;margin-top:8px}
+.submit-v2-upload{display:grid;grid-template-columns:1fr auto;align-items:center;border:1px dashed var(--line,#555);padding:18px!important;gap:10px}
+.submit-v2-upload label{grid-column:1/-1}
+.submit-v2-upload input{border:0}
+.submit-v2-upload span{font-size:10px;letter-spacing:.1em;opacity:.45}
+.submit-v2-button{width:100%;display:flex;align-items:center;justify-content:space-between;padding:19px 20px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:800px){
+ .submit-v2-grid{grid-template-columns:1fr;gap:28px}
+ .submit-v2-body{grid-template-columns:1fr}
+ .submit-v2-left{border-right:0;border-bottom:1px solid var(--line,#333);padding-right:0}
+ .submit-v2-form{padding-left:0}
+ .submit-v2-fields{grid-template-columns:1fr}
+ .submit-v2-fields .full{grid-column:auto}
+ .submit-v2-upload{grid-template-columns:1fr}
+}
+
+/* Band page: align all member cards from the top */
+.section-grid{
+  align-items:start;
+}
+.member{
+  align-items:start !important;
+}
+.member > span{
+  align-self:start !important;
+  margin-top:0 !important;
+}
+.member > div{
+  align-self:start !important;
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+.member h2{
+  margin-top:0 !important;
+}
+.member .meta:first-of-type{
+  margin-top:0 !important;
+}
+.member p{
+  margin-top:16px;
+}
+
+/* Compact band-member cards: number directly above name */
+.member{
+  display:block !important;
+  min-height:0 !important;
+  height:auto !important;
+  padding-top:24px !important;
+  padding-bottom:30px !important;
+}
+.member > span{
+  display:block !important;
+  margin:0 0 24px 0 !important;
+}
+.member > div{
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.member h2{
+  margin:0 0 8px 0 !important;
+}
+
+/* Band grid: all four blocks use the same dimensions as card 01 */
+.section-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-auto-rows:1fr !important;
+  align-items:stretch !important;
+}
+.member{
+  box-sizing:border-box !important;
+  height:100% !important;
+  min-height:0 !important;
+}
+@media(max-width:800px){
+  .section-grid{
+    grid-template-columns:1fr !important;
+    grid-auto-rows:auto !important;
+  }
+  .member{height:auto !important;}
+}
