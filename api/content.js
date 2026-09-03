@@ -8,10 +8,7 @@ async function readFile(path){const r=await fetch(`${apiPath(path)}?ref=${encode
 async function readContent(){
  const direct=await readFile('content.json');
  if(direct)return JSON.parse(direct);
- const files=['cms-core.json','cms-shows.json','cms-news.json','cms-interviews.json','cms-gallery.json','cms-timeline.json','cms-video.json'];
- const merged={};
- for(const file of files){const raw=await readFile(file);if(!raw)throw new Error('Missing seed file '+file);Object.assign(merged,JSON.parse(raw))}
- return merged;
+ return Object.assign({},require('../cms-core.json'),require('../cms-shows.json'),require('../cms-news.json'),require('../cms-interviews.json'),require('../cms-gallery.json'),require('../cms-timeline.json'),require('../cms-video.json'));
 }
 module.exports=async(req,res)=>{
  if(req.method==='GET'){try{return send(res,200,await readContent())}catch(e){return send(res,500,{error:'Could not load site content',detail:e.message})}}
