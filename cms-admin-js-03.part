@@ -13,7 +13,7 @@ function renderSection(){const e=document.querySelector('#editor');if(!e)return;
 function bindSpecial(){
  document.querySelectorAll('[data-album]').forEach(el=>el.oninput=()=>{content.albums[+el.dataset.album][el.dataset.k]=el.value;markDirty()});
  document.querySelectorAll('[data-track]').forEach(el=>el.oninput=()=>{content.albums[+el.dataset.track].tracks[+el.dataset.ti][el.dataset.k]=el.value;markDirty()});
- document.querySelectorAll('[data-add-track]').forEach(b=>b.onclick=()=>{content.albums[+b.dataset.addTrack].tracks.push({title:'New track',time:''});markDirty();renderSection()});
+ document.querySelectorAll('[data-add-track]').forEach(b=>b.onclick=()=>{content.albums[+b.dataset.addTrack].tracks.push({title:'New track',time:'',lyrics:''});markDirty();renderSection()});
  document.querySelectorAll('[data-question]').forEach(el=>el.oninput=()=>{content.interviews[el.dataset.question][+el.dataset.qi]=el.value;markDirty()});
  document.querySelectorAll('[data-add-question]').forEach(b=>b.onclick=()=>{content.interviews[b.dataset.addQuestion].push('New question');markDirty();renderSection()});
  document.querySelectorAll('[data-gallery]').forEach(el=>el.oninput=()=>{content.gallery[+el.dataset.gallery]=el.value;markDirty()});
