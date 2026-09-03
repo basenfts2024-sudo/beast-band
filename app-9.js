@@ -7,7 +7,8 @@
   'Inge Beckmann':'https://www.instagram.com/beckmannschreuder/',
   'Rian Zietsman':'https://www.instagram.com/rianzietsman/',
   'Louis Nel':'https://www.instagram.com/ll_cool_nel/',
-  'Werner von Waltsleben':'https://www.instagram.com/wernervonwaltsleben/'
+  'Werner von Waltsleben':'https://www.instagram.com/wernervonwaltsleben/',
+  'Sasha Righini':'https://www.instagram.com/__ko1__/'
  };
  const fixSocial=s=>{const name=String(s?.[0]||'').trim(),handle=String(s?.[1]||'').trim(),url=String(s?.[2]||'').trim();if(name.toLowerCase()==='instagram'&&/instagram\.com\/(beastbandsa|beast_band)\/?$/i.test(url))return ['Instagram','@beast_band','https://www.instagram.com/beast_band/'];return [name,handle,url]};
  let siteSocials=socials.filter(s=>String(s[0]||'').toLowerCase()!=='bandcamp').map(fixSocial);
@@ -16,7 +17,7 @@
  document.head.appendChild(style);
  const cleanInstagramUrl=url=>{try{const u=new URL(String(url||'').trim());if(!/(^|\.)instagram\.com$/i.test(u.hostname))return '';const m=u.pathname.match(/^\/(p|reel|tv)\/([^/]+)/i);return m?`https://www.instagram.com/${m[1]}/${m[2]}/`:''}catch{return ''}};
  const instagramSection=()=>{const posts=instagramPosts.map(x=>cleanInstagramUrl(typeof x==='string'?x:x?.url)).filter(Boolean);if(!posts.length)return '';return `<section class="band-instagram"><div class="band-instagram-head"><div><div class="eyebrow">Instagram</div><h2>@beast_band</h2></div><a class="text-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/beast_band/">Follow on Instagram ↗</a></div><div class="band-instagram-grid">${posts.map((url,i)=>`<div class="band-instagram-card"><iframe src="${url}embed/captioned/" title="BEAST Instagram post ${i+1}" loading="lazy" scrolling="no" frameborder="0" allowfullscreen></iframe></div>`).join('')}</div></section>`};
- const addMemberLinks=html=>{Object.entries(memberInstagram).forEach(([name,url])=>{const safe=name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const re=new RegExp(`(<h2>${safe}<\\/h2>[\\s\\S]*?<p>[^<]*<\\/p>)`);html=html.replace(re,`$1<a class="member-instagram" target="_blank" rel="noreferrer" href="${url}">Instagram ↗</a>`)});return html};
+ const addMemberLinks=html=>{Object.entries(memberInstagram).forEach(([name,url])=>{const safe=name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const re=new RegExp(`(<h2>${safe}<\\/h2>[\\s\\S]*?<p(?: class="bodycopy")?[^>]*>[^<]*<\\/p>)`);html=html.replace(re,`$1<a class="member-instagram" target="_blank" rel="noreferrer" href="${url}">Instagram ↗</a>`)});return html};
  const originalBand=band;
  const bandWithInstagram=()=>{let html=addMemberLinks(originalBand());const section=instagramSection();if(!section)return html;const close='</div></section></main>';const i=html.lastIndexOf(close);if(i>=0)return html.slice(0,i)+section+html.slice(i);const mainClose='</main>';const j=html.lastIndexOf(mainClose);return j>=0?html.slice(0,j)+section+html.slice(j):html+section};
  band=bandWithInstagram;
