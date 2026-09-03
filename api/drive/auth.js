@@ -18,7 +18,7 @@ module.exports=async(req,res)=>{
     access_type:'offline',
     prompt:'consent',
     include_granted_scopes:'true',
-    scope:'openid email https://www.googleapis.com/auth/drive.file',
+    scope:'openid email https://www.googleapis.com/auth/drive',
     login_hint:TARGET_EMAIL,
     state
   });
