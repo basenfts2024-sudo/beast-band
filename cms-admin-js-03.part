@@ -1,4 +1,3 @@
-l,home:renderHome,band:renderBand,albums:renderAlbums,lyrics:renderLyrics,shows:renderShows,news:renderNews,interviews:renderInterviews,gallery:renderGallery,video:renderVideo,timeline:renderTimeline,submit:renderSubmit,contact:renderContact,socials:renderSocials};
 const GOOGLE_CLIENT_ID='795220644196-3nmjjdevr2dc2qjfb0dd8dmb4engckn7.apps.googleusercontent.com';
 const ALLOWED_GOOGLE_EMAILS=['houjoubeckmann@gmail.com','futurenowza@gmail.com','basenfts2024@gmail.com','talktobeast@gmail.com'];
 let googleCredential=sessionStorage.getItem('beast_google_credential')||'';
