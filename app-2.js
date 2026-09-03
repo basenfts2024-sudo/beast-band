@@ -1,5 +1,5 @@
 ;
-const socials=[['Facebook','@BEASTBAND','https://www.facebook.com/BEASTBAND'],['Instagram','@beastbandsa','https://www.instagram.com/beastbandsa'],['Bandcamp','beast.bandcamp.com','https://beast.bandcamp.com'],['YouTube','BEAST','https://www.youtube.com'],['Vimeo','BEAST','https://vimeo.com'],['Spotify','BEAST','https://open.spotify.com']];
+const socials=[['Facebook','@BEASTBAND','https://www.facebook.com/BEASTBAND'],['Instagram','@beastbandsa','https://www.instagram.com/beastbandsa'],['YouTube','BEAST','https://www.youtube.com'],['Vimeo','BEAST','https://vimeo.com'],['Spotify','BEAST','https://open.spotify.com']];
 const members=[
 ['Inge Beckmann','Vocals · 2012–present','Also of Lark',"Frontwoman of Cape Town art-rock outfit Lark before its semi-permanent hiatus. Joined BEAST once the two-bass experiment 'sounded right', bringing a method-singing approach that swings between a whisper and a howl. She pushed for a name with an 'interesting visual effect' — Bow Beast — before the band settled on BEAST."],
 ['Rian Zietsman','Bass guitar · 2011–present','Also of Taxi Violence',"Guitarist of Taxi Violence who bought a bass with Louis Nel in late 2011 purely to learn the instrument. Plays the low, rhythmic end of the twin-bass setup, holding the floor while the second bass climbs over it."],
