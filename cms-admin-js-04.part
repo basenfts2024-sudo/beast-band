@@ -1,6 +1,9 @@
 function renderGeneral(){
  const fallback='https://desperate-orange-anteater.myfilebase.com/ipfs/QmWA4yRYu1fJAgB8aNNnWvEL8QrT4ndyQ5UDFxtt1Ycmm8';
  content.site=content.site||{};
- if(!('logoUrl' in content.site)) content.site.logoUrl=fallback;
+ if(!('logoUrl' in content.site)){
+  content.site.logoUrl=fallback;
+  if(String(content.site.logo||'').trim().toLowerCase()==='beast') content.site.logo='';
+ }
  return head('General','The overall identity, logo and global artwork used across the site.')+`<div class="fields">${input('site.title','Browser title')}${input('site.logo','Logo text (leave empty to use image)')}${input('site.logoUrl','Logo image / logo.png URL','url',true)}${input('site.location','Location')}${input('site.established','Established')}${input('site.tagline','Tagline')}${input('site.footerLine','Footer line','text',true)}${input('site.heroImage','Landing hero image URL','url',true)}${input('site.showsImage','Shows hero image URL','url',true)}</div><p class="help">The header uses Logo text when it contains text. If Logo text is empty, it automatically uses the logo image URL. If the image URL is also empty, it falls back to the default BEAST logo: ${esc(fallback)}. The image scales responsively with the browser while staying visually equivalent to the current header type size.</p>`;
 }
