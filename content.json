@@ -1,0 +1,687 @@
+{
+  "site": {
+    "title": "BEAST",
+    "logo": "",
+    "location": "Cape Town, South Africa",
+    "established": "2012",
+    "tagline": "Psychological rock and roll",
+    "heroImage": "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXYUTYLcgbh6nSKTzR4i3zowLovLwPZzkidwK4BWvqBsi",
+    "showsImage": "https://desperate-orange-anteater.myfilebase.com/ipfs/QmYCvRKK47zqUUDa1ySHwACSdnbYzSh84zmtpde5M64hMv",
+    "footerLine": "Est. 2012 — Psychological rock and roll",
+    "logoUrl": "https://desperate-orange-anteater.myfilebase.com/ipfs/QmWA4yRYu1fJAgB8aNNnWvEL8QrT4ndyQ5UDFxtt1Ycmm8"
+  },
+  "home": {
+    "heroKicker": "Cape Town · South Africa · Est. 2012",
+    "heroTitle": "Beast",
+    "heroText": "Psychological rock and roll built on two bass guitars, drums and one unmistakable voice.",
+    "heroCtaLabel": "Listen / Explore →",
+    "heroCtaRoute": "#/albums",
+    "introEyebrow": "The band",
+    "introTitle": "Two basses.\nDrums. Voice.",
+    "introText": "BEAST came out of Cape Town in 2012 with a deliberately unusual setup: two bass guitars, drums and Inge Beckmann's voice. Heavy, raw and stripped of the usual lead-guitar architecture.",
+    "introLinkLabel": "Read the band story",
+    "introLinkRoute": "#/band",
+    "latestEyebrow": "Latest update",
+    "latestLinkLabel": "All latest updates and press",
+    "followEyebrow": "Follow us",
+    "followTitle": "Stay close"
+  },
+  "members": [
+    {
+      "name": "Inge Beckmann",
+      "role": "Vocals · 2012–present",
+      "other": "Also of Lark",
+      "bio": "Frontwoman of Cape Town art-rock outfit Lark before its semi-permanent hiatus. Joined BEAST once the two-bass experiment 'sounded right', bringing a method-singing approach that swings between a whisper and a howl. She pushed for a name with an 'interesting visual effect' — Bow Beast — before the band settled on BEAST."
+    },
+    {
+      "name": "Rian Zietsman",
+      "role": "Bass guitar · 2011–present",
+      "other": "Also of Taxi Violence",
+      "bio": "Guitarist of Taxi Violence who bought a bass with Louis Nel in late 2011 purely to learn the instrument. Plays the low, rhythmic end of the twin-bass setup, holding the floor while the second bass climbs over it."
+    },
+    {
+      "name": "Louis Nel",
+      "role": "Bass guitar · 2011–present",
+      "other": "Also of Taxi Violence",
+      "bio": "Taxi Violence's drummer, turned bassist. Runs a higher, chord-based lead approach through a guitar amp — the reason BEAST sounds rawer and more low-fi than a standard rock four-piece."
+    },
+    {
+      "name": "Werner von Waltsleben",
+      "role": "Drums · 2013–present",
+      "other": "Also of Kobus!",
+      "bio": "Drummer of Afrikaans metal band Kobus!. A long-time fan of both Taxi Violence and Lark, he called joining BEAST 'a dream come true' — a chance to play the music he wanted to hear."
+    }
+  ],
+  "band": {
+    "pageEyebrow": "Bios",
+    "pageTitle": "The Band",
+    "pastMember": {
+      "name": "Sasha Righini",
+      "role": "Drums · 2011–2013",
+      "bio": "Drummer of The Plastics, invited into the basement sessions early and soon a full member. Left in mid-2013 to pursue his own music."
+    },
+    "instrumentation": "The twin-bass setup is rare in South African music. Zietsman plays low and rhythmic like a normal bassist; Nel plays higher and chord-based like a lead guitarist, through a guitar amp. The result is rawer, harder and more low-fi than a standard four-piece."
+  },
+  "albums": [
+    {
+      "key": "smoke",
+      "title": "Smoke Swig Swear",
+      "year": "2013",
+      "image": "https://desperate-orange-anteater.myfilebase.com/ipfs/QmR7ChmvHZc9dsrnPjbakGEjL6H1LyZqFMfmAjEQbTwNuw",
+      "type": "Studio album",
+      "recorded": "Sound and Motion Studios, Cape Town — four days, September 2012",
+      "release": "1 January 2013 · Beast",
+      "description": "BEAST's debut album, recorded in Cape Town and officially launched at The Assembly on 23 February 2013.",
+      "total": "32:37",
+      "tracks": [
+        {
+          "title": "Fill the Hole",
+          "time": "4:31",
+          "lyrics": "czxczxcxzcxz"
+        },
+        {
+          "title": "Airport Deport Abort",
+          "time": "3:28"
+        },
+        {
+          "title": "Walls",
+          "time": "3:51"
+        },
+        {
+          "title": "The Grape",
+          "time": "4:09"
+        },
+        {
+          "title": "Man in Between",
+          "time": "4:43"
+        },
+        {
+          "title": "Smoke Swig Swear",
+          "time": "4:13"
+        },
+        {
+          "title": "Cat Lady",
+          "time": "3:04"
+        },
+        {
+          "title": "Hand of God",
+          "time": "4:38"
+        }
+      ],
+      "spotify": "https://open.spotify.com",
+      "apple": "https://music.apple.com",
+      "youtube": "https://www.youtube.com"
+    },
+    {
+      "key": "bardo",
+      "title": "Bardo",
+      "year": "2015",
+      "image": "https://desperate-orange-anteater.myfilebase.com/ipfs/QmQePztdJYDU8Egw6g8PcCNZn6ZrXRiiRJeM1C6YN2SrXD",
+      "type": "Studio album",
+      "recorded": "Heritage Sound, Cape Town — October 2014, produced by Brendyn Rossouw",
+      "release": "6 February 2015 · Beast",
+      "description": "The second BEAST album, themed around the state between life and death and launched at The Assembly in Cape Town on 27 February 2015.",
+      "total": "30:53",
+      "tracks": [
+        {
+          "title": "Healer",
+          "time": "3:55"
+        },
+        {
+          "title": "Alliance",
+          "time": "3:07"
+        },
+        {
+          "title": "Out Here",
+          "time": "3:29"
+        },
+        {
+          "title": "Vesica Piscis",
+          "time": "4:33"
+        },
+        {
+          "title": "Are We Alive?",
+          "time": "2:52"
+        },
+        {
+          "title": "Wrong Side",
+          "time": "2:48"
+        },
+        {
+          "title": "Black Hole",
+          "time": "3:48"
+        },
+        {
+          "title": "Chant",
+          "time": "2:25"
+        },
+        {
+          "title": "Down",
+          "time": "3:56"
+        }
+      ],
+      "spotify": "https://open.spotify.com",
+      "apple": "https://music.apple.com",
+      "youtube": "https://www.youtube.com"
+    }
+  ],
+  "submit": {
+    "pageEyebrow": "Fan archive",
+    "pageTitle": "Submit",
+    "kicker": "BEAST ARCHIVE / CAPE TOWN",
+    "headline": "Keep the\nnoise alive.",
+    "intro1": "Photos, footage, flyers, bootlegs and stories from BEAST shows belong in one place.",
+    "intro2": "Send us what you have. If it goes into the archive, we’ll credit you.",
+    "steps": [
+      {
+        "title": "Choose what you’re sending",
+        "copy": "Photo, video, audio, flyer or story."
+      },
+      {
+        "title": "Add the context",
+        "copy": "Venue, date, city and anything you remember."
+      },
+      {
+        "title": "Send the best version",
+        "copy": "Largest file or highest quality link you have."
+      }
+    ],
+    "archiveNote": "Anything published is credited unless you ask us not to."
+  },
+  "contact": {
+    "pageEyebrow": "Bookings · Press · Noise",
+    "pageTitle": "Contact",
+    "bookingsEmail": "bookings@beastband.co.za",
+    "pressEmail": "press@beastband.co.za",
+    "location": "Cape Town, South Africa",
+    "facebook": "https://www.facebook.com/BEASTBAND"
+  },
+  "socials": [
+    {
+      "name": "Facebook",
+      "handle": "@BEASTBAND",
+      "url": "https://www.facebook.com/BEASTBAND"
+    },
+    {
+      "name": "Instagram",
+      "handle": "@beastbandsa",
+      "url": "https://www.instagram.com/beastbandsa"
+    },
+    {
+      "name": "Bandcamp",
+      "handle": "beast.bandcamp.com",
+      "url": "https://beast.bandcamp.com"
+    },
+    {
+      "name": "YouTube",
+      "handle": "BEAST",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "Vimeo",
+      "handle": "BEAST",
+      "url": "https://vimeo.com"
+    },
+    {
+      "name": "Spotify",
+      "handle": "BEAST",
+      "url": "https://open.spotify.com"
+    }
+  ],
+  "shows": [
+    {
+      "year": "2012",
+      "date": "May 2012",
+      "venue": "The Assembly, Cape Town",
+      "title": "Early Assembly performance",
+      "copy": "One of the earliest documented Cape Town listings for BEAST, billed as a new supergroup built from members of Lark, Taxi Violence and The Plastics.",
+      "source": "https://www.bizcommunity.com/Article/196/429/74755.html"
+    },
+    {
+      "year": "2012",
+      "date": "9–11 Aug 2012",
+      "venue": "Oppikoppi Farm, Northam, Limpopo",
+      "title": "Oppikoppi Sweet Thing",
+      "copy": "BEAST played Oppikoppi 18 Sweet Thing; contemporary post-festival coverage singled the band out as one of the weekend highlights.",
+      "source": "https://www.news24.com/oppikoppi-2012-crazy-filthy-sweet-fun-20120820"
+    },
+    {
+      "year": "2012",
+      "date": "4–7 Oct 2012",
+      "venue": "Cloof Wine Estate, Darling, Western Cape",
+      "title": "Rocking the Daisies",
+      "copy": "BEAST appeared at the 2012 Rocking the Daisies festival during its sold-out Western Cape run.",
+      "source": "https://www.concertarchives.org/bands/desmond-and-the-tutus"
+    },
+    {
+      "year": "2012",
+      "date": "30 Nov–2 Dec 2012",
+      "venue": "Theewaterskloof Sports Club, Villiersdorp",
+      "title": "Synergy Live Festival",
+      "copy": "BEAST joined the national-heavy Synergy Live bill headlined by The Prodigy, alongside Jack Parow, Prime Circle, Van Coke Kartel, The Narrow and many more.",
+      "source": "https://www.concertarchives.org/bands/the-prodigy?year=2012"
+    },
+    {
+      "year": "2013",
+      "date": "1 Feb 2013",
+      "venue": "Breede River, Swellendam, Western Cape",
+      "title": "Up the Creek",
+      "copy": "BEAST were among the announced South African acts for Up the Creek 2013, alongside Karen Zoid, ISO, YOAV, Jeremy Loops and others.",
+      "source": "https://www.timeslive.co.za/tshisa-live/tshisa-live/2012-10-16-up-the-creek-2013/"
+    },
+    {
+      "year": "2013",
+      "date": "23 Feb 2013",
+      "venue": "The Assembly, Cape Town",
+      "title": "Smoke Swig Swear album launch",
+      "copy": "Official Cape Town launch for the debut album Smoke Swig Swear.",
+      "source": "https://gevaaalik.com/beast-smoke-swig-swear"
+    },
+    {
+      "year": "2013",
+      "date": "27 Feb 2013",
+      "venue": "Aces n Spades, Cape Town",
+      "title": "Design Indaba Music Circuit",
+      "copy": "BEAST played at 23:30 after The Dollfins and Taxi Violence on the opening night of Design Indaba Music Circuit 2013.",
+      "source": "https://mg.co.za/2013-02-22-design-indaba-expo/"
+    },
+    {
+      "year": "2013",
+      "date": "7–10 Mar 2013",
+      "venue": "Circle of Dreams, Riviersonderend, Western Cape",
+      "title": "RAMfest Cape Town",
+      "copy": "BEAST appeared at the Cape Town leg of RAMfest 2013, part of the festival edition headlined by Rise Against, Bring Me The Horizon and Pendulum.",
+      "source": "https://en.wikipedia.org/wiki/RAMFest"
+    },
+    {
+      "year": "2013",
+      "date": "15–16 Mar 2013",
+      "venue": "Riversands Farm, Johannesburg, Gauteng",
+      "title": "RAMfest Johannesburg",
+      "copy": "BEAST were also on the Johannesburg RAMfest bill at Riversands Farm, extending the 2013 festival run into Gauteng.",
+      "source": "https://www.concertarchives.org/bands/fuzigish?date=past"
+    },
+    {
+      "year": "2015",
+      "date": "21 Feb 2015",
+      "venue": "Cape Town Club, Cape Town",
+      "title": "Bardo private acoustic launch",
+      "copy": "A private acoustic performance for album backers, family and friends, radically reworking BEAST material for the room.",
+      "source": "https://lauramccullagh.com/blog/2015/02/beast-bardo-exclusive-acoustic-launch-at-the-cape-town-club/"
+    },
+    {
+      "year": "2015",
+      "date": "27 Feb 2015",
+      "venue": "Cape Town",
+      "title": "Bardo album launch",
+      "copy": "Public launch period for BEAST’s second album Bardo following its crowdfunding and recording campaign.",
+      "source": "https://www.webtickets.co.za/v2/event.aspx?itemid=1447793371"
+    },
+    {
+      "year": "2015",
+      "date": "29 Mar 2015",
+      "venue": "Fort Schanskop, Voortrekker Monument, Pretoria",
+      "title": "Park Acoustics",
+      "copy": "A documented Pretoria appearance at Park Acoustics. Contemporary coverage places BEAST on the bill directly after Sannie Fox.",
+      "source": "https://rwrant.co.za/3rd-edition-of-park-acoustics-for-2015/"
+    },
+    {
+      "year": "2015",
+      "date": "2–6 Apr 2015",
+      "venue": "Underberg, KwaZulu-Natal",
+      "title": "Splashy Fen",
+      "copy": "BEAST joined Splashy Fen over Easter weekend on a national bill featuring Taxi Violence, Matthew Mole, Shortstraw, aKING, Dan Patlansky and many more.",
+      "source": "https://www.citizen.co.za/highway-mail/uncategorized/2015/02/24/sas-hottest-acts-to-perform-at-splashy-fen/"
+    }
+  ],
+  "news": {
+    "intro": "Read the latest news directly from the band.",
+    "latestUpdates": [],
+    "articles": [
+      {
+        "date": "07 May 2012",
+        "category": "News",
+        "title": "Beast debut at The Assembly",
+        "summary": "Bizcommunity — One of the earliest contemporary notices of BEAST documents the Cape Town debut at The Assembly and introduces the original line-up: Louis Nel and Rian Zietsman of Taxi Violence, Sasha Righini of The Plastics and Lark vocalist Inge Beckmann.",
+        "body": "One of the earliest contemporary notices of BEAST documents the Cape Town debut at The Assembly and introduces the original line-up: Louis Nel and Rian Zietsman of Taxi Violence, Sasha Righini of The Plastics and Lark vocalist Inge Beckmann. Source: https://www.bizcommunity.com/Article/196/429/74755.html"
+      },
+      {
+        "date": "10 Jul 2012",
+        "category": "Feature",
+        "title": "BEAST: A Band Apart",
+        "summary": "One Small Seed — An early profile of the newly formed Cape Town project, cited in later band histories as one of the first substantial pieces on BEAST and its unconventional two-bass approach.",
+        "body": "An early profile of the newly formed Cape Town project, cited in later band histories as one of the first substantial pieces on BEAST and its unconventional two-bass approach. Source: https://www.onesmallseed.com/"
+      },
+      {
+        "date": "22 Jul 2012",
+        "category": "Interview / Feature",
+        "title": "Inge Beckmann describes BEAST as the polar opposite of Lark",
+        "summary": "Evan Milton — In a feature on Lark, Beckmann discusses her then-new dual-bass project BEAST, describing it as a local super-project with members of Taxi Violence and The Plastics and as the polar opposite of Lark.",
+        "body": "In a feature on Lark, Beckmann discusses her then-new dual-bass project BEAST, describing it as a local super-project with members of Taxi Violence and The Plastics and as the polar opposite of Lark. Source: https://evanmilton.wordpress.com/2012/07/22/lark-inge-beckmann-and-paul-ressel-are-back/"
+      },
+      {
+        "date": "05 Feb 2013",
+        "category": "Album Review",
+        "title": "BEAST — Smoke Swig Swear",
+        "summary": "Gevaaalik — A contemporary review focuses on what made the debut unusual in South African rock: no guitars, two bassists, drums and a powerful vocalist, praising the simplicity and originality of the resulting sound.",
+        "body": "A contemporary review focuses on what made the debut unusual in South African rock: no guitars, two bassists, drums and a powerful vocalist, praising the simplicity and originality of the resulting sound. Source: https://gevaaalik.com/beast-smoke-swig-swear"
+      },
+      {
+        "date": "12 Feb 2013",
+        "category": "Profile",
+        "title": "Beast: no boundaries",
+        "summary": "Design Indaba — Design Indaba profiles BEAST around its 2013 Music Circuit appearance, highlighting the band's 'no boundaries' ethos and an organic approach designed to leave room for all four musicians to improvise.",
+        "body": "Design Indaba profiles BEAST around its 2013 Music Circuit appearance, highlighting the band's 'no boundaries' ethos and an organic approach designed to leave room for all four musicians to improvise. Source: https://www.designindaba.com/tags/beast"
+      },
+      {
+        "date": "27 Feb 2013",
+        "category": "Live Review",
+        "title": "Raucous rock at Aces n Spades",
+        "summary": "Design Indaba — Design Indaba's report from its Music Circuit describes a packed Aces n Spades and singles BEAST out as the act the crowd had come to see, documenting the band's rapidly growing Cape Town live reputation.",
+        "body": "Design Indaba's report from its Music Circuit describes a packed Aces n Spades and singles BEAST out as the act the crowd had come to see, documenting the band's rapidly growing Cape Town live reputation. Source: https://www.designindaba.com/articles/design-indaba-news/raucous-rock-aces-n-spades"
+      },
+      {
+        "date": "22 Mar 2013",
+        "category": "Video / Feature",
+        "title": "The Jack Daniel's Music Reporter featuring Cape Town band BEAST",
+        "summary": "2oceansvibe — A video feature introduces BEAST to a wider audience through the members' established Cape Town bands, emphasizing the two-bass/no-guitar setup and Beckmann's commanding vocals.",
+        "body": "A video feature introduces BEAST to a wider audience through the members' established Cape Town bands, emphasizing the two-bass/no-guitar setup and Beckmann's commanding vocals. Source: https://www.2oceansvibe.com/2013/03/22/the-jack-daniels-music-reporter-featuring-cape-town-band-beast-video/"
+      },
+      {
+        "date": "24 Aug 2013",
+        "category": "Album Review",
+        "title": "The BEAST With Two Bassists — Smoke Swig Swear",
+        "summary": "Kurt Writes Things — A detailed review reconstructs the band's origin: Rian Zietsman and Louis Nel deciding they both wanted to learn bass, bringing in Sasha Righini, and developing the idea into the dark garage-rock experiment that became BEAST.",
+        "body": "A detailed review reconstructs the band's origin: Rian Zietsman and Louis Nel deciding they both wanted to learn bass, bringing in Sasha Righini, and developing the idea into the dark garage-rock experiment that became BEAST. Source: https://www.kurtwritesthings.com/things/2013/08/the-beast-with-two-bassists-smoke-swig-swear-album-review"
+      },
+      {
+        "date": "28 Aug 2013",
+        "category": "Premiere / Interview",
+        "title": "Premiere: Watch BEAST's video for Smoke Swig Swear",
+        "summary": "VICE / Noisey — VICE premiered the title-track video internationally, interviewed Inge Beckmann and presented a short documentary about BEAST's rehearsals, recording and album launch. The feature describes the band as a two-bassist, no-guitar quartet mixing rock, punk and grunge.",
+        "body": "VICE premiered the title-track video internationally, interviewed Inge Beckmann and presented a short documentary about BEAST's rehearsals, recording and album launch. The feature describes the band as a two-bassist, no-guitar quartet mixing rock, punk and grunge. Source: https://www.vice.com/en/article/premiere-watch-beasts-video-for-smoke-swig-swear/"
+      },
+      {
+        "date": "21 Feb 2015",
+        "category": "Live / Photography",
+        "title": "Bardo exclusive acoustic launch at the Cape Town Club",
+        "summary": "Laura McCullagh — A photo report documents BEAST's intimate acoustic Bardo launch for supporters at the Cape Town Club, noting how the restrained arrangement intensified the band's music and Beckmann's performance.",
+        "body": "A photo report documents BEAST's intimate acoustic Bardo launch for supporters at the Cape Town Club, noting how the restrained arrangement intensified the band's music and Beckmann's performance. Source: https://lauramccullagh.com/blog/2015/02/beast-bardo-exclusive-acoustic-launch-at-the-cape-town-club/"
+      },
+      {
+        "date": "29 Mar 2015",
+        "category": "Live Review",
+        "title": "BEAST at Park Acoustics, Pretoria",
+        "summary": "Running Wolf's Rant — Coverage of Park Acoustics in Pretoria praises BEAST's heavy twin-bass attack, Beckmann's piercing vocals and the drummer's performance, providing a useful record of the band's Gauteng live activity.",
+        "body": "Coverage of Park Acoustics in Pretoria praises BEAST's heavy twin-bass attack, Beckmann's piercing vocals and the drummer's performance, providing a useful record of the band's Gauteng live activity. Source: https://rwrant.co.za/3rd-edition-of-park-acoustics-for-2015/"
+      },
+      {
+        "date": "09 Apr 2015",
+        "category": "Feature / Album Review",
+        "title": "Could this be SA's finest live rock act?",
+        "summary": "Mail & Guardian — A major national feature examines the making of Bardo, BEAST's experimental origins and its formidable live reputation. It explains how Zietsman and Nel began the project in a shared-house basement and discusses Zietsman's role mixing the second album.",
+        "body": "A major national feature examines the making of Bardo, BEAST's experimental origins and its formidable live reputation. It explains how Zietsman and Nel began the project in a shared-house basement and discusses Zietsman's role mixing the second album. Source: https://mg.co.za/friday/2015-04-09-could-this-be-sa-s-finest-live-rock-act/"
+      }
+    ]
+  },
+  "interviews": {
+    "Inge Beckmann": [
+      "What first attracted you to the idea of singing over two bass guitars?",
+      "How is writing for BEAST different from writing and performing with Lark?",
+      "Where did the phrase “psychological rock and roll” come from for you?",
+      "How do you find vocal space inside such a low-frequency, heavy arrangement?",
+      "Which BEAST song is the most physically demanding to perform live?",
+      "How do lyrics usually begin for you: an image, a phrase, a melody or something else?",
+      "What changed in your approach between Smoke Swig Swear and Bardo?",
+      "Which BEAST performance has stayed with you most strongly?",
+      "What do you think people misunderstand about the band when they only hear the records?",
+      "If BEAST made another record now, what would you want to explore vocally and lyrically?"
+    ],
+    "Rian Zietsman": [
+      "What made you and Louis decide that both of you should learn bass instead of choosing different instruments?",
+      "What did those first basement sessions sound like before BEAST had a name?",
+      "How do you divide the low end between your bass and Louis’s higher, chord-based role?",
+      "What makes a bass riff feel like a BEAST riff rather than a Taxi Violence idea?",
+      "How did recording Smoke Swig Swear in four days affect the character of the album?",
+      "What did you learn from mixing Bardo yourself?",
+      "How much of a BEAST arrangement is written and how much comes from playing together in the room?",
+      "Which venue or festival best captured the band at full power?",
+      "What piece of gear has been most important to creating your BEAST bass sound?",
+      "What unfinished musical idea would you most like BEAST to return to?"
+    ],
+    "Louis Nel": [
+      "When you and Rian bought bass guitars, did you already imagine the project becoming a serious band?",
+      "How did you develop the higher, more guitar-like role for your bass?",
+      "What was hardest about moving from drums in Taxi Violence to bass in BEAST?",
+      "How do you keep two distorted basses distinct instead of letting them become one wall of low end?",
+      "Which Smoke Swig Swear track best represents the original idea behind BEAST?",
+      "How did Werner joining the band change the way the rhythm section worked?",
+      "What do you listen for when you and Rian are building a new riff together?",
+      "Which BEAST live show pushed the band furthest physically?",
+      "Is there a song whose live arrangement became better than the recorded version?",
+      "If you rebuilt the BEAST rig from scratch today, what would you keep and what would you change?"
+    ],
+    "Werner von Waltsleben": [
+      "What was your first impression of BEAST before you became the drummer?",
+      "How did you adapt your drumming to a band with two bass guitars and no conventional guitar?",
+      "What did you want to bring to the band that was different from the earlier incarnation?",
+      "How do you create definition when the music around the drums is so dense and low?",
+      "Which Bardo track was the most interesting to build rhythmically?",
+      "How much freedom do you have to alter parts from show to show?",
+      "What is the hardest BEAST song to play live?",
+      "Which national show or festival gave you the clearest sense of the band connecting with an audience?",
+      "How does the acoustic side of BEAST change your approach as a drummer?",
+      "What would you want the rhythm section to sound like on a future BEAST record?"
+    ]
+  },
+  "gallery": [
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmR2r9bjCCGigtt1wmvdfquLHTQjuMF5wdkDK5CZ8WK27s",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmfBeMMjKwAbNNMgqTgKctvTKiufb9GUFEAUUJrKgeUg5Y",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmWeTEtuBATYjHEEAXqaguxBvWd6wXuKtrviokyUV8n5L8",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXYUTYLcgbh6nSKTzR4i3zowLovLwPZzkidwK4BWvqBsi",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmRDPygpLQK3bsu4B98CXiZhaTpZcVQsGuHFnpcqrL21ar",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmcnXwGd6vVXfbhDGcxLwcKPN1rxbMGceAYA6NpQBtKWPr",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmVxFvHE7ugSHuNp4vx9SZrMiAUojw7Xgi5E7HFRNtJ2zf",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmTTujmm5VNpcxA2vqhjoeoBgT45cgt6TiFWMXGykUknQ3",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmV5btTWf9RHR88CyN6MzosVSR5bJBkDsx6HDDGz13UyYE",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmUMCTepa1e4AVwKCedsPQxiEL6QesBRbHHYhFYCadPBYM",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmTj4p9hZX1d5baX8LNMzhJ7fwpvHw2USfjx3igQTsqYTz",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXsy1MWTsXfFUA2HQnpw8JTEZkgzh6CX7p8uvWyq8Nwvz",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmdZ1zycA5cSLSVZTxWn65DT33fs7gXM6kwFBAczPynb9Z",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmbZj8yH9drbxttMCsjav5Gy3DataSm5kdUXubdjbiBkiU",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmVGqVvMWMaJpCHx4CUMsFLTwStrDiHR24X1SVY3wy5e5U",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmR7ChmvHZc9dsrnPjbakGEjL6H1LyZqFMfmAjEQbTwNuw",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmcxNNU1zgJri9RdsNs7wsKxmyAVxx2NMTn7RLk5JSMw7S",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmY1BGMSvLuaQT5GCejv4sf8sc2grJBgVZhzRYGkXZ75MB",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmQePztdJYDU8Egw6g8PcCNZn6ZrXRiiRJeM1C6YN2SrXD",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmfKU3JzB13bcmbtPe25yes3x9qk4YXBEHD3pivpedGftJ",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmNeSBvTP5eJiVCmjZhm5xqTM2aSVuzag4eUrcLHCXZstY",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmYyWQUEYPyTBdn5gqCQV4YZC6ra4ZzdNh3mvZsrcFEtzt",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmZCnyvAXYFPnLHvDLKAEWUZa7gFbzvFGAsq75GwKX2Q6t",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmVoJUHxcS7QGWX1ge8ERivBgYwP34icJXspV6DjbbNbwh",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmUP52yzAYQHzZYC32KMkREpQuSqEtenQ6hLPN7m2B1fz9",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmU6K6aiGUngFeaPvpzkJzu356Y3r5vXj2PBNM276GdZDx",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmeCBBw9HbPnt1wW1KdDGgAz8MiTKVe8mSzjPXLMk3o4ye",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmP79M4zUDZifJsSXfX2YQ37uim7zREMjouYrdye1zVFPN",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmaeJsPM6cWjGc2ywXRpg4yRvcujeQp7M8ieUTzvxNjQjU",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmW13fageJa3uYJT8qGZA5M7wHVopGjMWdq3tn6cPAtYgU",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmaGNMukYa3DJNpzaKJcithVJ1Wpf3NGR4gVuXg2iJxVec",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmVr96PWZGxcZPo5bsBD6MXXeWRUkuaeVA3zAtfax4Jn9r",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXRnivJUeoqgJ8cYjsTJnD8xgwpDztcx4RYb2R5WtyxNx",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmbVfQiKXkCJ8t1cyiXgbqFLYWz1fgotfYHo1UH5wfGNgz",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/Qmdh3rPECv8qw2jryXut5TSL5m8nGYMtWimvVHrNix9kjs",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXNEKyMenAj9sRJwpJ8GbHRUL3oaMk7jStxg5TQcqJL8S",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmdrfLDBkZHV7dvDwvohwpzV69L59EdFFfT3pYCPazceQe",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmYWtb6DA2VmU6au8CkqqKmPXUULh3Urk7UpyjQQiF4LS1",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmPs8KDtQiq3v2ky1BxVs8soArgLBei8rwUCRSz5whXo7V",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmPVyTN4n5FtPUrLdkaErcSVs94arKygW3JWuP5HZWGmY5",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmY5wRR5aUidaZsx8sXNtavDmJzeusV4AsYRTrL9MfGjCK",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmVfdJRF6bSYEHoa9crASsXann5Xd7CQakuqpxFwABdRYR",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmdWDzdq9YqyTJ5Zc7LYMEnphRADFZqrnTXJatVwP3b84B",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmUXDugR52NMViZUXifh979o8Qx4vcbS6AoPGxjL5iEMMX",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/Qme2E4hacbjYSQc9ebrkri8eFGCdeNDDeeN52VUhTKDewM",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/Qme3zaXP7mCS1qBmG4UouuG1SJ7p5cotKUTyEecVrZj2Dd",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmQcTUvkp2NcX7Bdp874gpbvdPjZPo7fT2KJoUWWCcyYtw",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXBuDVa9z2vTZivtU4gaD6qrqG8K9tmJZF8r1EXSzAkEC",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/Qmf4zN4CnJzoTChzQ1k9mvJCe56dQPoimRStxsC5RCLNfc",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmeGHJkZXWNKV2azu4WxJbM6LNXEuDXEzdYYAunFvk1jbc",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmVnJeLnhjvcbf3dQV5K9TpHCCLU4Jzf6KxZXQ9hj9B8L1",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/Qmbx2Wppg8Lfk5rWqTTqJyrM5Yf4QaipTj2Zqm1eSmgmCz",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmTGtPteiiyg1W3BxDdnUeBXizSkALvcTgfZGr6JuTiMdd",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmfUf37cfU92gAkniEb2XBtA1aFmJN4p8Wqoh1LPbinfpS",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmZPj4q329Hn1H9HrPLJB7E9DHpwiE9MbHfm96tDG3iPdv",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmUUf8oSjK2UrQ4xUTgP2K1BxdiBs795M97tQgmokkMXSJ",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmeANBWBnLpUQWF3TcvrjtTMFisLG5SPH4aKzGQkHqB79A",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmdaAPpjyFqpcfefBhrKJQky8EMh8quFcCmpzsrpb2XB4K",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXWdXpJZE5U162tRan6zn98WJCx4S5KSMK2RbPCqvsUww",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmcotgPpGDFDCip6LM8U5UzYcsxC5H1TgXTTfA4xMqXdzM",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmQNvfHwK4p6ERBwbHoRgTNsqySthqq5XdiPohzHTwStvz",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmS5hnLDnALRoBSrnTGs1vwDpjrR6Gp2wK8wjNUYoL49Sm",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmfMzb2JVa56NY1BaPcPvH279EWRHPuZjquTsu83FM4EK5",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmdaaDZo7Tea1ssecKth3yiD2Sc4hWGPWB4NF9fVgA22zu",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmX6TvyCsgPRynqebpYqTgh45V3n39npNiX3t1tmeDL3Gr",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/Qmd8LYfUgAJNL2YDtBmoPte8fby3qSejxkjsTWmVSwTuu8",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmWf2s1wwA9NiYzAG9zBoZdPAxp2ixuDFTgaS5V5QcDmxC",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmdZg2SbVB11Uqm5QFNVBM8oa2XrQK4PLKST61D9cAfchh",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmXWm19s2eRAgVg5S9s2SLaBTB1cK85MKPvNXfVGhj5fUW",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmU2HUNC1vRiVUMy57yKygayg3XdPL14pGvXejhqNto1UE",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmWcdYHnviGNhzWhvZJQghL8APq9z7wiG5HpoHATREP6Hc",
+    "https://desperate-orange-anteater.myfilebase.com/ipfs/QmeyJ86tbHeaivuhQ7UQ9KzGVeVX67aE6F4jNVCKLfTLos"
+  ],
+  "timeline": [
+    {
+      "year": "2011",
+      "title": "The two-bass experiment begins",
+      "copy": "Rian Zietsman and Louis Nel buy bass guitars and begin jamming in the basement of the house they share. Sasha Righini joins on drums and the project develops from an experiment into a band.",
+      "source": "https://www.vice.com/en/article/premiere-watch-beasts-video-for-smoke-swig-swear/"
+    },
+    {
+      "year": "2012",
+      "title": "Kombass becomes BEAST",
+      "copy": "The early working name Kombass gives way to BEAST after Inge Beckmann joins on vocals. The stripped setup is fixed: two bass guitars, drums and voice.",
+      "source": "https://www.vice.com/en/article/premiere-watch-beasts-video-for-smoke-swig-swear/"
+    },
+    {
+      "year": "2012",
+      "title": "First Cape Town shows",
+      "copy": "By May 2012 BEAST are being billed at The Assembly in Cape Town as a new supergroup featuring members of Lark, Taxi Violence and The Plastics.",
+      "source": "https://www.bizcommunity.com/Article/196/429/74755.html"
+    },
+    {
+      "year": "2012",
+      "title": "Oppikoppi Sweet Thing",
+      "copy": "BEAST join the 9–11 August Oppikoppi bill in Northam. Contemporary festival coverage later lists the band among the weekend highlights.",
+      "source": "https://www.news24.com/oppikoppi-2012-crazy-filthy-sweet-fun-20120820"
+    },
+    {
+      "year": "2012",
+      "title": "Smoke Swig Swear recorded",
+      "copy": "The debut album is recorded over four days in September at Sound and Motion Studios in Cape Town, keeping the twin-bass sound raw and direct.",
+      "source": "https://www.vice.com/en/article/premiere-watch-beasts-video-for-smoke-swig-swear/"
+    },
+    {
+      "year": "2012",
+      "title": "Rocking the Daisies",
+      "copy": "BEAST play the sold-out Rocking the Daisies festival at Cloof Wine Estate in Darling during the 4–7 October weekend.",
+      "source": "https://lauramccullagh.com/blog/tag/the-brother-moves-on/"
+    },
+    {
+      "year": "2012",
+      "title": "Synergy Live",
+      "copy": "On 30 November BEAST play the main stage at Synergy Live at Theewaterskloof, scheduled 21:00–21:45 immediately before The Narrow and headliner The Prodigy.",
+      "source": "https://www.last.fm/festival/3408956%2BSynergy%2BLive%2B2012"
+    },
+    {
+      "year": "2013",
+      "title": "Up the Creek",
+      "copy": "On 1 February BEAST appear on Up the Creek's Friday-night Tribute to Women main-stage programme alongside SAARKIE, Tailor, Machineri and Karen Zoid.",
+      "source": "https://www.news24.com/channel/music/features/up-the-creek-all-you-need-to-know-20130116"
+    },
+    {
+      "year": "2013",
+      "title": "Smoke Swig Swear launches",
+      "copy": "The debut gets its official album launch at The Assembly in Cape Town on 23 February.",
+      "source": "https://en.wikipedia.org/wiki/Beast_%28South_African_band%29"
+    },
+    {
+      "year": "2013",
+      "title": "Design Indaba Music Circuit",
+      "copy": "Four days after the album launch, BEAST play the Design Indaba Music Circuit at Aces n Spades as part of a three-day Cape Town programme spanning 32 artists and eight venues.",
+      "source": "https://www.designindaba.com/articles/design-indaba-news/raucous-rock-aces-n-spades"
+    },
+    {
+      "year": "2013",
+      "title": "RAMfest",
+      "copy": "BEAST are billed for RAMfest Cape Town, 7–10 March at Circle of Dreams near Riviersonderend, on a bill with Rise Against, Bring Me The Horizon and Pendulum.",
+      "source": "https://www.thegremlin.co.za/2013/02/25/sa-bands-have-some-surprises-up-their-sleeves-for-ramfest-2013/"
+    },
+    {
+      "year": "2013",
+      "title": "The documentary and international press",
+      "copy": "A short documentary follows the album launch, and on 28 August VICE/Noisey premieres the Smoke Swig Swear video alongside an interview with Inge Beckmann and the band's story.",
+      "source": "https://www.vice.com/en/article/premiere-watch-beasts-video-for-smoke-swig-swear/"
+    },
+    {
+      "year": "2013",
+      "title": "Line-up change",
+      "copy": "Sasha Righini leaves to pursue his own music and Werner von Waltsleben of Kobus! takes over on drums.",
+      "source": "https://en.wikipedia.org/wiki/Beast_%28South_African_band%29"
+    },
+    {
+      "year": "2014",
+      "title": "Crowdfunding Bardo",
+      "copy": "On 13 August BEAST launch an Indiegogo campaign to fund album two while remaining unsigned and protecting their creative independence. A private investor later helps complete the record.",
+      "source": "https://en.wikipedia.org/wiki/Beast_%28South_African_band%29"
+    },
+    {
+      "year": "2015",
+      "title": "Private Bardo acoustic launch",
+      "copy": "On 21 February, backers, family and friends attend an intimate acoustic launch at the Cape Town Club, with the material rearranged for a quieter setting.",
+      "source": "https://lauramccullagh.com/blog/2015/02/beast-bardo-exclusive-acoustic-launch-at-the-cape-town-club/"
+    },
+    {
+      "year": "2015",
+      "title": "Bardo launches publicly",
+      "copy": "The second album receives its public launch on 27 February. Contemporary listings describe the record as the result of the band's 2014 fan-funded recording push.",
+      "source": "https://www.webtickets.co.za/v2/event.aspx?itemid=1447793371"
+    },
+    {
+      "year": "2015",
+      "title": "Splashy Fen",
+      "copy": "BEAST are announced for Splashy Fen's 2–6 April Easter-weekend edition near Underberg, joining a broad South African bill including Taxi Violence, Shortstraw, aKING and Nakhane Toure.",
+      "source": "https://www.citizen.co.za/highway-mail/uncategorized/2015/02/24/sas-hottest-acts-to-perform-at-splashy-fen/"
+    },
+    {
+      "year": "2015",
+      "title": "Critical peak for Bardo",
+      "copy": "On 9 April the Mail & Guardian asks whether BEAST might be South Africa's finest live rock act, praising the force of the two-bass setup and Inge Beckmann's vocal range.",
+      "source": "https://mg.co.za/friday/2015-04-09-could-this-be-sa-s-finest-live-rock-act/"
+    }
+  ],
+  "videography": [
+    {
+      "number": "01",
+      "title": "Fill The Hole",
+      "meta": "Vimeo · 2012",
+      "url": "https://vimeo.com"
+    },
+    {
+      "number": "02",
+      "title": "BEAST Documentary",
+      "meta": "Vimeo · 2013",
+      "url": "https://vimeo.com"
+    },
+    {
+      "number": "03",
+      "title": "Smoke Swig Swear",
+      "meta": "Vimeo · 2013",
+      "url": "https://vimeo.com"
+    },
+    {
+      "number": "04",
+      "title": "Wrong Side",
+      "meta": "YouTube · 2014",
+      "url": "https://www.youtube.com"
+    }
+  ]
+}
