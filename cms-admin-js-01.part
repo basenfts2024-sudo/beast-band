@@ -2,7 +2,7 @@ const app=document.querySelector('#app');
 let content=null,original=null,current='general',dirty=false,key=sessionStorage.getItem('beast_admin_key')||'';
 const clone=x=>JSON.parse(JSON.stringify(x));
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const sections=[['general','General'],['home','Home'],['band','Band'],['albums','Albums'],['shows','Shows'],['news','News'],['interviews','Band Interviews'],['gallery','Gallery'],['video','Videography'],['timeline','Timeline'],['submit','Submit'],['contact','Contact'],['socials','Social Links']];
+const sections=[['general','General'],['home','Home'],['band','Band'],['albums','Albums'],['lyrics','Lyrics'],['shows','Shows'],['news','News'],['interviews','Band Interviews'],['gallery','Gallery'],['video','Videography'],['timeline','Timeline'],['submit','Submit'],['contact','Contact'],['socials','Social Links']];
 const pathGet=(o,path)=>path.split('.').reduce((a,k)=>a?.[k],o);
 const pathSet=(o,path,val)=>{const p=path.split('.');let a=o;while(p.length>1){const k=p.shift();a[k]??={};a=a[k]}a[p[0]]=val;markDirty()};
 function markDirty(){dirty=true;document.querySelector('#save-status')?.replaceChildren(document.createTextNode('Unsaved changes'));document.querySelector('#dirty')?.classList.remove('hidden')}
