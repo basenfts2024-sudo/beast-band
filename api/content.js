@@ -2,7 +2,7 @@ const OWNER=process.env.GITHUB_OWNER||'basenfts2024-sudo';
 const REPO=process.env.GITHUB_REPO||'beast-band';
 const BRANCH=process.env.GITHUB_BRANCH||'main';
 const GOOGLE_CLIENT_ID='795220644196-3nmjjdevr2dc2qjfb0dd8dmb4engckn7.apps.googleusercontent.com';
-const ALLOWED_EMAILS=new Set(['houjoubeckmann@gmail.com','futurenowza@gmail.com','basenfts2024@gmail.com']);
+const ALLOWED_EMAILS=new Set(['houjoubeckmann@gmail.com','futurenowza@gmail.com','basenfts2024@gmail.com','talktobeast@gmail.com']);
 const apiPath=p=>`https://api.github.com/repos/${OWNER}/${REPO}/contents/${p}`;
 const headers=()=>({Accept:'application/vnd.github+json','User-Agent':'beast-band-cms',...(process.env.GITHUB_TOKEN?{Authorization:`Bearer ${process.env.GITHUB_TOKEN}`}:{})});
 const send=(res,status,data)=>{res.statusCode=status;res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store, max-age=0');res.end(JSON.stringify(data));};
