@@ -2,7 +2,7 @@ const app=document.querySelector('#app');
 let content=null,original=null,current='general',dirty=false,key=sessionStorage.getItem('beast_admin_key')||'';
 const clone=x=>JSON.parse(JSON.stringify(x));
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const sections=[['general','General'],['home','Home'],['band','Band'],['albums','Albums'],['lyrics','Lyrics'],['shows','Shows'],['news','News'],['interviews','Band Interviews'],['gallery','Gallery'],['video','Videography'],['timeline','Timeline'],['submit','Submit'],['contact','Contact'],['socials','Social Links']];
+const sections=[['general','General'],['home','Home'],['band','Band'],['albums','Albums'],['lyrics','Lyrics'],['shows','Shows'],['news','News'],['interviews','Band Interviews'],['gallery','Gallery'],['friends','Friends'],['video','Videography'],['timeline','Timeline'],['submit','Submit'],['contact','Contact'],['socials','Social Links']];
 const pathGet=(o,path)=>path.split('.').reduce((a,k)=>a?.[k],o);
 const pathSet=(o,path,val)=>{const p=path.split('.');let a=o;while(p.length>1){const k=p.shift();a[k]??={};a=a[k]}a[p[0]]=val;markDirty()};
 function markDirty(){dirty=true;document.querySelector('#save-status')?.replaceChildren(document.createTextNode('Unsaved changes'));document.querySelector('#dirty')?.classList.remove('hidden')}
@@ -21,10 +21,11 @@ const listMap={
  video:()=>content.videography,
  socials:()=>content.socials,
  instagram:()=>{content.band??={};content.band.instagramPosts??=[];return content.band.instagramPosts},
+ friends:()=>{content.friends??=[];return content.friends},
  albums:()=>content.albums,
  steps:()=>content.submit.steps
 };
-const newMap={members:{name:'New member',role:'',other:'',bio:''},shows:{year:'',date:'',venue:'',title:'New show',copy:'',source:''},articles:{date:'',category:'News',title:'New article',summary:'',body:''},latest:{date:'',category:'Update',title:'New update',summary:'',body:''},timeline:{year:'',title:'New timeline entry',copy:'',source:''},video:{number:'',title:'New video',meta:'',url:''},socials:{name:'New link',handle:'',url:''},instagram:{url:'https://www.instagram.com/p/'},steps:{title:'New step',copy:''}};
+const newMap={friends:{name:'New friend',context:'',youtube:'',facebook:'',instagram:''},members:{name:'New member',role:'',other:'',bio:''},shows:{year:'',date:'',venue:'',title:'New show',copy:'',source:''},articles:{date:'',category:'News',title:'New article',summary:'',body:''},latest:{date:'',category:'Update',title:'New update',summary:'',body:''},timeline:{year:'',title:'New timeline entry',copy:'',source:''},video:{number:'',title:'New video',meta:'',url:''},socials:{name:'New link',handle:'',url:''},instagram:{url:'https://www.instagram.com/p/'},steps:{title:'New step',copy:''}};
 function bindLists(){
  document.querySelectorAll('[data-list]').forEach(el=>el.oninput=()=>{listMap[el.dataset.list]()[+el.dataset.i][el.dataset.k]=el.value;markDirty()});
  document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{const k=b.dataset.add;listMap[k]().push(clone(newMap[k]));markDirty();renderSection()});
