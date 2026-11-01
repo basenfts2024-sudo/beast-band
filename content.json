@@ -269,14 +269,6 @@
     },
     {
       "year": "2015",
-      "date": "21 Feb 2015",
-      "venue": "Cape Town Club, Cape Town",
-      "title": "Bardo private acoustic launch",
-      "copy": "A private acoustic performance for album backers, family and friends, radically reworking BEAST material for the room.",
-      "source": "https://lauramccullagh.com/blog/2015/02/beast-bardo-exclusive-acoustic-launch-at-the-cape-town-club/"
-    },
-    {
-      "year": "2015",
       "date": "27 Feb 2015",
       "venue": "Cape Town",
       "title": "Bardo album launch",
@@ -284,12 +276,12 @@
       "source": "https://www.webtickets.co.za/v2/event.aspx?itemid=1447793371"
     },
     {
-      "year": "2013",
-      "date": "7–10 Mar 2013",
-      "venue": "Circle of Dreams, Riviersonderend, Western Cape",
-      "title": "RAMfest Cape Town",
-      "copy": "BEAST appeared at the Cape Town leg of RAMfest 2013, part of the festival edition headlined by Rise Against, Bring Me The Horizon and Pendulum.",
-      "source": "https://en.wikipedia.org/wiki/RAMFest"
+      "year": "2015",
+      "date": "21 Feb 2015",
+      "venue": "Cape Town Club, Cape Town",
+      "title": "Bardo private acoustic launch",
+      "copy": "A private acoustic performance for album backers, family and friends, radically reworking BEAST material for the room.",
+      "source": "https://lauramccullagh.com/blog/2015/02/beast-bardo-exclusive-acoustic-launch-at-the-cape-town-club/"
     },
     {
       "year": "2013",
@@ -301,11 +293,19 @@
     },
     {
       "year": "2013",
-      "date": "1 Feb 2013",
-      "venue": "Breede River, Swellendam, Western Cape",
-      "title": "Up the Creek",
-      "copy": "BEAST were among the announced South African acts for Up the Creek 2013, alongside Karen Zoid, ISO, YOAV, Jeremy Loops and others.",
-      "source": "https://www.timeslive.co.za/tshisa-live/tshisa-live/2012-10-16-up-the-creek-2013/"
+      "date": "7–10 Mar 2013",
+      "venue": "Circle of Dreams, Riviersonderend, Western Cape",
+      "title": "RAMfest Cape Town",
+      "copy": "BEAST appeared at the Cape Town leg of RAMfest 2013, part of the festival edition headlined by Rise Against, Bring Me The Horizon and Pendulum.",
+      "source": "https://en.wikipedia.org/wiki/RAMFest"
+    },
+    {
+      "year": "2013",
+      "date": "27 Feb 2013",
+      "venue": "Aces n Spades, Cape Town",
+      "title": "Design Indaba Music Circuit",
+      "copy": "BEAST played at 23:30 after The Dollfins and Taxi Violence on the opening night of Design Indaba Music Circuit 2013.",
+      "source": "https://mg.co.za/2013-02-22-design-indaba-expo/"
     },
     {
       "year": "2013",
@@ -317,11 +317,11 @@
     },
     {
       "year": "2013",
-      "date": "27 Feb 2013",
-      "venue": "Aces n Spades, Cape Town",
-      "title": "Design Indaba Music Circuit",
-      "copy": "BEAST played at 23:30 after The Dollfins and Taxi Violence on the opening night of Design Indaba Music Circuit 2013.",
-      "source": "https://mg.co.za/2013-02-22-design-indaba-expo/"
+      "date": "1 Feb 2013",
+      "venue": "Breede River, Swellendam, Western Cape",
+      "title": "Up the Creek",
+      "copy": "BEAST were among the announced South African acts for Up the Creek 2013, alongside Karen Zoid, ISO, YOAV, Jeremy Loops and others.",
+      "source": "https://www.timeslive.co.za/tshisa-live/tshisa-live/2012-10-16-up-the-creek-2013/"
     },
     {
       "year": "2012",
