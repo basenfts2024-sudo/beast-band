@@ -33,6 +33,55 @@
  if(typeof routes==='object'&&routes)routes['/gallery']=galleryWithInstagram;
  header=()=>{const text=String(siteLogo.logo||'').trim();const image=String(siteLogo.logoUrl||'').trim()||FALLBACK_LOGO;const mark=text?text:`<img src="${image}" alt="BEAST logo">`;return `<header class="header"><div class="wrap header-in"><a class="logo ${text?'':'logo-image'}" href="#/">${mark}</a><button class="menu">Menu</button><nav class="nav">${['Band','Timeline','Albums','Lyrics','Shows','News','Gallery','Friends','Submit','Contact'].map(x=>`<a href="#/${x.toLowerCase()}">${x}</a>`).join('')}</nav></div></header>`};
  footer=()=>`<footer class="footer"><div class="wrap footer-in"><div class="foot-brand"><span>Cape Town, South Africa</span><span>Est. 2012 — Psychological rock and roll</span></div><div class="foot-links">${siteSocials.map(s=>`<a target="_blank" rel="noreferrer" href="${s[2]}">${s[0]}</a>`).join('')}</div></div></footer>`;
+
+ const friendDialogStyle=document.createElement('style');
+ friendDialogStyle.textContent='.friend-card{cursor:default}.friend-open{grid-column:1/-1;display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;width:100%;min-width:0;padding:0;border:0;background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer}.friend-open .friend-body{display:flex;flex-direction:column;min-width:0}.friend-name{display:block;font-size:clamp(25px,2.45vw,38px);font-weight:700;line-height:.96;letter-spacing:-.05em;margin:0 0 15px}.friend-open:hover .friend-name{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.friend-open:focus-visible{outline:2px solid #111;outline-offset:5px}.friend-open-hint{display:block;margin-top:18px;font-size:10px;letter-spacing:.14em;opacity:.58}.friend-links{grid-column:2;display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.friends-open-note{display:block;margin-top:15px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.58}.friend-dialog-backdrop{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:clamp(12px,3vw,32px);background:rgba(0,0,0,.76);overflow-y:auto}.friend-dialog{position:relative;width:min(760px,100%);max-height:min(88vh,920px);overflow-y:auto;background:#f5f4ef;color:#111;padding:clamp(26px,5vw,58px);box-shadow:0 18px 80px rgba(0,0,0,.34)}.friend-dialog-close{position:absolute;top:14px;right:14px;width:42px;height:42px;border:1px solid #111;background:transparent;color:#111;font-size:27px;line-height:1;cursor:pointer}.friend-dialog-close:hover{background:#111;color:#f5f4ef}.friend-dialog-eyebrow,.friend-dialog-kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.6}.friend-dialog h2{font-size:clamp(40px,7vw,76px);font-weight:700;line-height:.88;letter-spacing:-.065em;margin:24px 52px 16px 0}.friend-dialog-context{font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.62;line-height:1.5}.friend-dialog-rule{height:1px;background:#777;opacity:.6;margin:26px 0}.friend-dialog-summary{font-size:clamp(17px,2vw,22px);line-height:1.48;max-width:650px;margin:12px 0 0}.friend-dialog-section{margin-top:27px}.friend-dialog-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.friend-dialog-links a{display:inline-block;color:inherit;text-decoration:none;border:1px solid rgba(0,0,0,.32);padding:10px 12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.friend-dialog-links a:hover{background:#111;color:#f5f4ef}.friend-dialog-source-note{font-size:13px;line-height:1.5;opacity:.65;margin:10px 0 0}.friend-dialog:focus{outline:none}@media(max-width:620px){.friend-dialog-backdrop{padding:0;place-items:stretch}.friend-dialog{width:100%;max-height:100dvh;min-height:100dvh;padding:72px 24px 34px}.friend-open-hint{margin-top:14px}.friend-card{min-height:0}}';
+ document.head.appendChild(friendDialogStyle);
+ const friendHtml=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const friendHref=value=>/^https:\/\//i.test(String(value||''))?String(value):'';
+ const friendAnchor=(label,url)=>{const href=friendHref(url);return href?'<a href="'+friendHtml(href)+'" target="_blank" rel="noopener noreferrer">'+friendHtml(label)+'</a>':''};
+ const openFriendProfile=index=>{
+  const person=Array.isArray(friends)?friends[Number(index)]:null;
+  if(!person)return;
+  const previousFocus=document.activeElement;
+  const previousOverflow=document.body.style.overflow;
+  const social=[friendAnchor('INSTAGRAM ↗',person.instagram),friendAnchor('FACEBOOK ↗',person.facebook),friendAnchor('YOUTUBE ↗',person.youtube)].filter(Boolean).join('');
+  const sources=(Array.isArray(person.careerSources)?person.careerSources:[]).map(item=>friendAnchor(item.label||'CAREER SOURCE ↗',item.url)).filter(Boolean).join('');
+  const archive=friendAnchor('BEAST GIG / TIMELINE SOURCE ↗',person.source);
+  const overlay=document.createElement('div');
+  overlay.className='friend-dialog-backdrop';
+  overlay.innerHTML='<section class="friend-dialog" role="dialog" aria-modal="true" aria-labelledby="friend-dialog-title" tabindex="-1"><button class="friend-dialog-close" type="button" aria-label="Close artist profile">×</button><div class="friend-dialog-eyebrow">BEAST / FRIENDS OF BEAST</div><h2 id="friend-dialog-title">'+friendHtml(person.name||'Artist profile')+'</h2><p class="friend-dialog-context">'+friendHtml(person.context||'')+'</p><div class="friend-dialog-rule"></div><div class="friend-dialog-kicker">CAREER SNAPSHOT</div><p class="friend-dialog-summary">'+friendHtml(person.careerSummary||'A detailed career summary is not yet available for this artist. The links below provide the verified material currently available.')+'</p>'+(social?'<div class="friend-dialog-section"><div class="friend-dialog-kicker">ARTIST LINKS</div><div class="friend-dialog-links">'+social+'</div></div>':'')+((sources||archive)?'<div class="friend-dialog-section"><div class="friend-dialog-kicker">RESEARCH & REFERENCES</div><div class="friend-dialog-links">'+sources+archive+'</div><p class="friend-dialog-source-note">Career notes are compiled from the linked artist profiles, music catalogues and published coverage. Some early local acts have limited surviving public documentation.</p></div>':'')+'</section>';
+  const dialog=overlay.querySelector('.friend-dialog');
+  const closeButton=overlay.querySelector('.friend-dialog-close');
+  const close=()=>{
+   document.removeEventListener('keydown',onKeydown);
+   overlay.remove();
+   document.body.style.overflow=previousOverflow;
+   if(previousFocus&&typeof previousFocus.focus==='function')previousFocus.focus();
+  };
+  const onKeydown=event=>{
+   if(event.key==='Escape'){event.preventDefault();close();return;}
+   if(event.key==='Tab'){
+    const focusable=Array.from(dialog.querySelectorAll('a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])'));
+    if(!focusable.length){event.preventDefault();dialog.focus();return;}
+    const first=focusable[0],last=focusable[focusable.length-1];
+    if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+    else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+   }
+  };
+  closeButton.addEventListener('click',close);
+  overlay.addEventListener('click',event=>{if(event.target===overlay)close();});
+  document.addEventListener('keydown',onKeydown);
+  document.body.appendChild(overlay);
+  document.body.style.overflow='hidden';
+  closeButton.focus();
+ };
+ document.addEventListener('click',event=>{
+  const trigger=event.target.closest('.friend-open');
+  if(!trigger)return;
+  openFriendProfile(trigger.dataset.friendIndex);
+ });
+
  render();
  fetch('/api/content?ts='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(c=>{
   if(c?.site){const hasLogoUrl=Object.prototype.hasOwnProperty.call(c.site,'logoUrl');const legacyText=String(c.site.logo||'').trim();siteLogo.logo=(!hasLogoUrl&&legacyText.toLowerCase()==='beast')?'':legacyText;siteLogo.logoUrl=c.site.logoUrl||FALLBACK_LOGO;}
