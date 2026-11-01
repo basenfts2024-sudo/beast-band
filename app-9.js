@@ -27,6 +27,10 @@
  const bandWithInstagram=()=>{let html=addMemberLinks(originalBand());const section=instagramSection();if(!section)return html;const close='</div></section></main>';const i=html.lastIndexOf(close);if(i>=0)return html.slice(0,i)+section+html.slice(i);const mainClose='</main>';const j=html.lastIndexOf(mainClose);return j>=0?html.slice(0,j)+section+html.slice(j):html+section};
  band=bandWithInstagram;
  if(typeof routes==='object'&&routes)routes['/band']=bandWithInstagram;
+ const originalGallery=gallery;
+ const galleryWithInstagram=()=>{let html=originalGallery();const section=instagramSection();if(!section)return html;const marker='<div class="gallery">';const i=html.indexOf(marker);return i>=0?html.slice(0,i)+section+html.slice(i):html+section};
+ gallery=galleryWithInstagram;
+ if(typeof routes==='object'&&routes)routes['/gallery']=galleryWithInstagram;
  header=()=>{const text=String(siteLogo.logo||'').trim();const image=String(siteLogo.logoUrl||'').trim()||FALLBACK_LOGO;const mark=text?text:`<img src="${image}" alt="BEAST logo">`;return `<header class="header"><div class="wrap header-in"><a class="logo ${text?'':'logo-image'}" href="#/">${mark}</a><button class="menu">Menu</button><nav class="nav">${['Band','Timeline','Albums','Lyrics','Shows','News','Gallery','Friends','Submit','Contact'].map(x=>`<a href="#/${x.toLowerCase()}">${x}</a>`).join('')}</nav></div></header>`};
  footer=()=>`<footer class="footer"><div class="wrap footer-in"><div class="foot-brand"><span>Cape Town, South Africa</span><span>Est. 2012 — Psychological rock and roll</span></div><div class="foot-links">${siteSocials.map(s=>`<a target="_blank" rel="noreferrer" href="${s[2]}">${s[0]}</a>`).join('')}</div></div></footer>`;
  render();
