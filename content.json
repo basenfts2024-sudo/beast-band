@@ -1056,6 +1056,54 @@
       "youtube": "",
       "facebook": "https://www.facebook.com/illsystem/",
       "instagram": "https://www.instagram.com/ill_system/"
+    },
+    {
+      "name": "SAARKIE",
+      "context": "Up The Creek · 1 Feb 2013",
+      "youtube": "https://www.youtube.com/watch?v=Wsvn2KK9S5I",
+      "facebook": "https://www.facebook.com/saarkieband/",
+      "instagram": "https://www.instagram.com/saarkieband/",
+      "source": "https://www.timeslive.co.za/tshisa-live/tshisa-live/2012-10-16-up-the-creek-2013/"
+    },
+    {
+      "name": "Tailor",
+      "context": "Up The Creek · 1 Feb 2013",
+      "youtube": "",
+      "facebook": "https://www.facebook.com/thisistailor",
+      "instagram": "https://www.instagram.com/thisistailor/",
+      "source": "https://www.timeslive.co.za/tshisa-live/tshisa-live/2012-10-16-up-the-creek-2013/"
+    },
+    {
+      "name": "Machineri",
+      "context": "Up The Creek · 1 Feb 2013",
+      "youtube": "",
+      "facebook": "",
+      "instagram": "",
+      "source": "https://www.timeslive.co.za/tshisa-live/tshisa-live/2012-10-16-up-the-creek-2013/"
+    },
+    {
+      "name": "Woodstock Mafia",
+      "context": "RAMfest 2013 · Cape Town festival bill",
+      "youtube": "https://www.youtube.com/woodstockmafiaSA",
+      "facebook": "https://www.facebook.com/woodstockmafia",
+      "instagram": "",
+      "source": "https://www.news24.com/life/ramfest-2013-kicks-off-20130307"
+    },
+    {
+      "name": "Fuzigish",
+      "context": "RAMfest 2013 · Cape Town festival bill",
+      "youtube": "",
+      "facebook": "https://www.facebook.com/FUZIGISH",
+      "instagram": "",
+      "source": "https://www.news24.com/life/ramfest-2013-kicks-off-20130307"
+    },
+    {
+      "name": "Goodnight Wembley",
+      "context": "RAMfest 2013 · Red Heart Rum Main Stage",
+      "youtube": "",
+      "facebook": "",
+      "instagram": "",
+      "source": "https://www.news24.com/life/ramfest-2013-kicks-off-20130307"
     }
   ]
 }
