@@ -25,7 +25,7 @@ const listMap={
  albums:()=>content.albums,
  steps:()=>content.submit.steps
 };
-const newMap={friends:{name:'New friend',context:'',youtube:'',facebook:'',instagram:''},members:{name:'New member',role:'',other:'',bio:''},shows:{year:'',date:'',venue:'',title:'New show',copy:'',source:''},articles:{date:'',category:'News',title:'New article',summary:'',body:''},latest:{date:'',category:'Update',title:'New update',summary:'',body:''},timeline:{year:'',title:'New timeline entry',copy:'',source:''},video:{number:'',title:'New video',meta:'',url:''},socials:{name:'New link',handle:'',url:''},instagram:{url:'https://www.instagram.com/p/'},steps:{title:'New step',copy:''}};
+const newMap={friends:{name:'New friend',context:'',youtube:'',facebook:'',instagram:'',source:''},members:{name:'New member',role:'',other:'',bio:''},shows:{year:'',date:'',venue:'',title:'New show',copy:'',source:''},articles:{date:'',category:'News',title:'New article',summary:'',body:''},latest:{date:'',category:'Update',title:'New update',summary:'',body:''},timeline:{year:'',title:'New timeline entry',copy:'',source:''},video:{number:'',title:'New video',meta:'',url:''},socials:{name:'New link',handle:'',url:''},instagram:{url:'https://www.instagram.com/p/'},steps:{title:'New step',copy:''}};
 function bindLists(){
  document.querySelectorAll('[data-list]').forEach(el=>el.oninput=()=>{listMap[el.dataset.list]()[+el.dataset.i][el.dataset.k]=el.value;markDirty()});
  document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{const k=b.dataset.add;listMap[k]().push(clone(newMap[k]));markDirty();renderSection()});
